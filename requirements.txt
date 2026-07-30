@@ -1,0 +1,35 @@
+pydantic>=2.6
+python-dotenv>=1.0
+requests>=2.31
+
+# Embedding / reranking
+sentence-transformers>=3.0
+torch>=2.2
+
+# Generation (HF transformers in-process). TextIteratorStreamer (B3
+# streaming) ships with transformers itself — no extra package needed.
+transformers>=4.44
+accelerate>=0.30
+
+# Retrieval
+rank_bm25>=0.2.2
+tiktoken>=0.7
+
+# Vector store
+pinecone>=5.0
+
+# Prompt compression — STILL UNUSED (see backend/generation/compress.py's
+# docstring). Kept installed for the same reason it was kept in the ALQAC
+# era: cheap to keep, documents a real legal-domain constraint. Drop this
+# line if compress.py is ever deleted.
+llmlingua>=0.2.2
+
+# Ingestion of supplementary law documents
+python-docx>=1.1
+pdfplumber>=0.11
+
+# --- Removed vs. the ALQAC-era requirements.txt --------------------------
+# (nothing was actually ALQAC-specific at the dependency level — the old
+# `requests` dependency was used for both the Case Content API client
+# [removed] AND is still needed transitively by sentence-transformers/HF
+# hub downloads, so it stays.)
