@@ -1,24 +1,3 @@
-"""
-Pinecone-backed vector store for the law corpus.
-
-Metadata filtering (design doc §3.2 — effective/expired provisions,
-document type) is pushed down into Pinecone's native metadata filter so
-expired law is excluded *before* the ANN search runs, not after.
-
-`_get_index()` is `@lru_cache`d (system_adjustments_v4.md §3.1 — this was
-the dominant source of per-query latency before the fix: constructing
-`Pinecone(...).Index(...)` does a `describe_index()` network round-trip, and
-re-creating that client on every `query()` call added it back every time).
-
-CHATBOT_MIGRATION_PLAN.md §D2 (applied here): `_chunk_metadata()` now stores
-`article_num` (the REAL printed "Điều N" number, D2's chunker.py addition)
-as its OWN Pinecone metadata field, alongside the existing `breadcrumb`
-string. Nháp #2's `embed.py` schema (`{law_name, chapter, article, clause,
-point, title, level}` — flat, per-field metadata) was the prompt for this:
-a UI that wants to render a citation without re-parsing the breadcrumb
-string can now just read `article_num` (falling back to `aid` when it's
-null) directly off the match metadata.
-"""
 from __future__ import annotations
 
 from functools import lru_cache
@@ -32,135 +11,80 @@ from backend.models import LawChunk, RetrievedChunk
 @lru_cache(maxsize=1)
 def _get_client():
     from pinecone import Pinecone
-
     if not config.PINECONE_API_KEY:
-        raise RuntimeError(
-            "PINECONE_API_KEY is not set. Add it to your .env file (see README §Configuration)."
-        )
+        raise RuntimeError("PINECONE_API_KEY is not set. Add it to your .env file (see README §Configuration).")
     return Pinecone(api_key=config.PINECONE_API_KEY)
 
 
 def ensure_index() -> None:
-    """Create the Pinecone index if it doesn't already exist."""
     from pinecone import ServerlessSpec
-
     pc = _get_client()
     existing = {i["name"] for i in pc.list_indexes()}
     if config.PINECONE_INDEX_NAME not in existing:
-        pc.create_index(
-            name=config.PINECONE_INDEX_NAME,
-            dimension=config.EMBEDDING_DIM,
-            metric="cosine",
-            spec=ServerlessSpec(cloud=config.PINECONE_CLOUD, region=config.PINECONE_REGION),
-        )
+        pc.create_index(name=config.PINECONE_INDEX_NAME, dimension=config.EMBEDDING_DIM, metric="cosine",
+                         spec=ServerlessSpec(cloud=config.PINECONE_CLOUD, region=config.PINECONE_REGION))
 
 
 @lru_cache(maxsize=1)
 def _get_index():
-    """Cache the Index client — see module docstring. Pure caching change;
-    does not alter retrieval logic, filtering, or results."""
     ensure_index()
     return _get_client().Index(config.PINECONE_INDEX_NAME)
 
 
 def reset_index_cache() -> None:
-    """Invalidate the cached Pinecone client/Index (only needed when a
-    single process must point at a different index mid-run, e.g. tests)."""
     _get_index.cache_clear()
     _get_client.cache_clear()
 
 
 def _chunk_metadata(chunk: LawChunk, extra: Optional[dict] = None) -> dict:
     meta = {
-        "law_id": chunk.law_id,
-        "aid": chunk.aid,
-        # D2: separate, UI-friendly field — falls back to -1 (sentinel; Pinecone
-        # metadata doesn't support None) when unparseable. Consumers should
-        # treat -1 the same as "use aid for display instead".
+        "law_id": chunk.law_id, "aid": chunk.aid,
         "article_num": chunk.article_num if chunk.article_num is not None else -1,
-        "level": chunk.level,
-        "parent_id": chunk.parent_id or "",
-        "breadcrumb": chunk.breadcrumb,
-        "text": chunk.text,
+        "level": chunk.level, "parent_id": chunk.parent_id or "",
+        "breadcrumb": chunk.breadcrumb, "text": chunk.text,
     }
     if extra:
         meta.update(extra)
     return meta
 
 
-def upsert_chunks(
-    chunks: list[LawChunk],
-    status_by_law: Optional[dict[str, str]] = None,
-    batch_size: int = 100,
-) -> int:
-    """Embed and upsert child chunks only (parents are kept in a local lookup
-    table, re-attached at generation time rather than searched directly)."""
+def upsert_chunks(chunks, status_by_law=None, batch_size: int = 100) -> int:
     index = _get_index()
     child_chunks = [c for c in chunks if c.level == "child"]
     status_by_law = status_by_law or {}
-
     count = 0
     for i in range(0, len(child_chunks), batch_size):
-        batch = child_chunks[i : i + batch_size]
+        batch = child_chunks[i:i + batch_size]
         vectors = embed_texts([c.text for c in batch])
         upserts = []
         for chunk, vec in zip(batch, vectors):
             extra = {"status": status_by_law.get(chunk.law_id, "unknown")}
-            upserts.append(
-                {
-                    "id": chunk.chunk_id,
-                    "values": vec.tolist(),
-                    "metadata": _chunk_metadata(chunk, extra),
-                }
-            )
+            upserts.append({"id": chunk.chunk_id, "values": vec.tolist(), "metadata": _chunk_metadata(chunk, extra)})
         index.upsert(vectors=upserts, namespace=config.PINECONE_NAMESPACE)
         count += len(upserts)
     return count
 
 
-def query(
-    text: str,
-    top_k: int = config.VECTOR_TOP_K,
-    law_id: Optional[str] = None,
-    require_active: bool = True,
-) -> list[RetrievedChunk]:
-    """Vector search with optional hard metadata filter, applied server-side
-    by Pinecone (design doc §3.2)."""
+def query(text: str, top_k: int = config.VECTOR_TOP_K, law_id=None, require_active: bool = True) -> list:
     index = _get_index()
     vec = embed_query(text)
-
     flt: dict = {}
     if law_id:
         flt["law_id"] = {"$eq": law_id}
     if require_active:
         flt["status"] = {"$in": ["active", "unknown"]}
-
-    res = index.query(
-        vector=vec,
-        top_k=top_k,
-        namespace=config.PINECONE_NAMESPACE,
-        include_metadata=True,
-        filter=flt or None,
-    )
-
+    res = index.query(vector=vec, top_k=top_k, namespace=config.PINECONE_NAMESPACE, include_metadata=True, filter=flt or None)
     out = []
     for match in res.get("matches", []):
         md = match.get("metadata", {})
         raw_article_num = md.get("article_num", -1)
-        out.append(
-            RetrievedChunk(
-                chunk_id=match["id"],
-                law_id=md.get("law_id", ""),
-                aid=int(md.get("aid", -1)),
-                article_num=int(raw_article_num) if raw_article_num not in (None, -1) else None,
-                text=md.get("text", ""),
-                score=float(match.get("score", 0.0)),
-                source="vector",
-            )
-        )
+        out.append(RetrievedChunk(
+            chunk_id=match["id"], law_id=md.get("law_id", ""), aid=int(md.get("aid", -1)),
+            article_num=int(raw_article_num) if raw_article_num not in (None, -1) else None,
+            text=md.get("text", ""), score=float(match.get("score", 0.0)), source="vector",
+        ))
     return out
 
 
 def delete_namespace() -> None:
-    """Wipe the whole namespace — useful when re-ingesting the corpus."""
     _get_index().delete(delete_all=True, namespace=config.PINECONE_NAMESPACE)

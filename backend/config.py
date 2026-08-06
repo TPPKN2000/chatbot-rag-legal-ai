@@ -52,8 +52,34 @@ PINECONE_REGION = _env("PINECONE_REGION", "us-east-1")
 PINECONE_NAMESPACE = _env("PINECONE_NAMESPACE", "law-corpus")
 
 # --- Models --------------------------------------------------------------
+# B0-B4 (coding_plan.md): Nhóm B đề xuất nâng cấp EMBEDDING_MODEL_NAME lên
+# Qwen/Qwen3-Embedding-4B (+ RERANKER_MODEL_NAME lên Qwen/Qwen3-Reranker-4B
+# cùng cặp). QUYẾT ĐỊNH CÓ CHỦ Ý ở đây: KHÔNG đổi default trực tiếp trong
+# code, dù bản patch mẫu trong coding_plan.md có set default mới — vì B4
+# của chính tài liệu đó ghi rõ "KHÔNG được merge vào production dù
+# VRAM/latency ổn" nếu Recall@5 A/B test (cần data/chatbot_eval_set.json
+# soạn trên CORPUS THẬT, xem A3) chưa pass. Đổi default trong config.py
+# chính là merge vào production ngay khi deploy — mâu thuẫn với gate đó.
+# Cách dùng đúng theo B3 (reindex procedure): override qua env, trỏ
+# INDEX_NAME sang index MỚI (vd. legalrag-law-corpus-v2-qwen4b) để giữ
+# production index cũ chạy song song cho tới khi A/B test pass:
+#   EMBEDDING_MODEL_NAME=Qwen/Qwen3-Embedding-4B
+#   EMBEDDING_DIM=1536
+#   EMBEDDING_QUERY_INSTRUCTION="Given a Vietnamese legal question, retrieve the most relevant statute passage that answers it."
+#   EMBEDDING_USE_MRL_TRUNCATE=true
+#   RERANKER_MODEL_NAME=Qwen/Qwen3-Reranker-4B
+#   INDEX_NAME=legalrag-law-corpus-v2-qwen4b
+# Code (embed.py) đã sẵn sàng cho cấu hình này (instruction-prefix bất đối
+# xứng query/doc, MRL truncate_dim) — chỉ còn thiếu bước chạy B3/B4 thật
+# trên GPU + corpus thật + Pinecone thật (không có trong sandbox này).
 EMBEDDING_MODEL_NAME = _env("EMBEDDING_MODEL_NAME", "AITeamVN/Vietnamese_Embedding")
 EMBEDDING_DIM = _env_int("EMBEDDING_DIM", 1024)
+# Instruction-prefix cho model instruction-aware (Qwen3-Embedding). Rỗng
+# theo mặc định vì AITeamVN/Vietnamese_Embedding KHÔNG instruction-aware —
+# thêm prefix vào model không hỗ trợ sẽ chỉ thêm nhiễu, không lỗi cứng.
+EMBEDDING_QUERY_INSTRUCTION = _env("EMBEDDING_QUERY_INSTRUCTION", "")
+# MRL (Matryoshka) truncate_dim — chỉ bật khi model hỗ trợ (Qwen3-Embedding).
+EMBEDDING_USE_MRL_TRUNCATE = _env("EMBEDDING_USE_MRL_TRUNCATE", "false").lower() == "true"
 RERANKER_MODEL_NAME = _env("RERANKER_MODEL_NAME", "AITeamVN/Vietnamese_Reranker")
 GENERATION_MODEL_NAME = _env("GENERATION_MODEL_NAME", "Qwen/Qwen3.5-0.8B")
 DEVICE = _env("LEGALRAG_DEVICE", "cuda")  # falls back to cpu automatically in models.py

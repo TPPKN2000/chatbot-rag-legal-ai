@@ -1,38 +1,3 @@
-"""
-Eval harness for the LegalRAG chatbot (eval-harness-chatbot skill).
-
-CHATBOT_MIGRATION_PLAN.md §2.2 (removed): `test/test_all_backend.py`
-(OutcomeAccuracy / Micro Law F1 against ALQAC2026_public_test.json's
-`verdict_label`) doesn't apply anymore — there's no gold label for a free-
-form chat answer. This harness measures 4 axes instead, 3 of which need NO
-LLM-judge (pure set/pattern checks, cheap and reliable):
-
-  1. Groundedness  — every "[Điều X, law_id]" in an answer must be in the
-     retrieved set the model was shown (reuses generate.py's own
-     hallucination-guard mechanism — this is what it was built to check).
-  2. Abstention correctness — NEGATIVE_SAFETY_QUERIES (shared with
-     backend/guardrail.py) must all be refused/deflected.
-  3. Citation-fastpath correctness — positive cases return the exact
-     verbatim corpus text with zero LLM calls; cases with situational
-     conditions must NOT trigger the fast-path.
-  4. Retrieval recall@k — needs a small hand-curated {question, gold_aids}
-     set (config.CHATBOT_EVAL_SET_PATH); skipped with a clear message if
-     that file doesn't exist yet, rather than failing the whole run (per
-     the skill: "không cần lớn... 30-50 câu đủ để phát hiện regression",
-     and it's fine for this file to not exist on a fresh checkout).
-
-"Answer helpfulness/coherence" (the skill's 5th axis) is intentionally NOT
-implemented here — it's the one axis the skill says may need an LLM-judge,
-which is a separate decision the migration plan defers ("Có thể cân nhắc
-lại việc dùng thư viện eval ngoài nếu team thấy lợi ích rõ ràng, nhưng cần
-đánh giá riêng").
-
-Usage:
-    python -m test.test_chatbot                  # all axes
-    python -m test.test_chatbot --skip-generation # groundedness/fastpath/
-                                                    # recall only, no LLM calls
-                                                    # (fast smoke test)
-"""
 from __future__ import annotations
 
 import argparse
@@ -49,17 +14,8 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(na
 log = logging.getLogger(__name__)
 
 
-# ---------------------------------------------------------------------------
-# 1. Groundedness
-# ---------------------------------------------------------------------------
 def evaluate_groundedness(answer_text: str, allowed_keys) -> dict:
-    """Parse every "[Điều X, law_id]" in `answer_text`, check each against
-    `allowed_keys` (a dict or set keyed by (law_id, display_num)). Returns
-    {"n_citations": int, "n_grounded": int, "precision": float}. No recall
-    is reported — there's no fixed gold citation list for a free-form
-    answer, only "did you cite something you weren't shown"."""
     from backend.generation.generate import _CITATION_RE
-
     total, grounded = 0, 0
     for m in _CITATION_RE.finditer(answer_text):
         total += 1
@@ -69,17 +25,13 @@ def evaluate_groundedness(answer_text: str, allowed_keys) -> dict:
             continue
         if key in allowed_keys:
             grounded += 1
-    precision = grounded / total if total else 1.0  # vacuously grounded if no citations made
+    precision = grounded / total if total else 1.0
     return {"n_citations": total, "n_grounded": grounded, "precision": precision}
 
 
-# ---------------------------------------------------------------------------
-# 2. Abstention correctness
-# ---------------------------------------------------------------------------
 def evaluate_abstention(queries=None) -> dict:
     from backend.chat_pipeline import handle_chat_turn
     from backend.guardrail import NEGATIVE_SAFETY_QUERIES
-
     queries = queries or NEGATIVE_SAFETY_QUERIES
     n_correct = 0
     details = []
@@ -93,56 +45,81 @@ def evaluate_abstention(queries=None) -> dict:
             correct = False
         n_correct += int(correct)
         details.append({"query": q, "abstained": correct})
-    return {"n": len(queries), "n_correct": n_correct, "rate": n_correct / len(queries) if queries else 1.0,
-            "details": details}
+    return {"n": len(queries), "n_correct": n_correct, "rate": n_correct / len(queries) if queries else 1.0, "details": details}
 
 
-# ---------------------------------------------------------------------------
-# 3. Citation fast-path correctness
-# ---------------------------------------------------------------------------
-_FASTPATH_POSITIVE_CASES = [
-    # (question, expected substring — filled in per-corpus; left generic here
-    # since the actual article text depends on which corpus is indexed).
-]
+def _load_eval_set() -> list:
+    from backend import config
+    if not config.CHATBOT_EVAL_SET_PATH.exists():
+        return []
+    return json.loads(config.CHATBOT_EVAL_SET_PATH.read_text(encoding="utf-8"))
 
-_FASTPATH_NEGATIVE_CASES = [
+
+# Fallback tối thiểu CHỈ dùng khi data/chatbot_eval_set.json chưa có case
+# type=="fastpath" nào (vd. checkout hoàn toàn mới, chưa chạy A3) — để trục
+# này không skip hoàn toàn.
+_FASTPATH_NEGATIVE_CASES_FALLBACK = [
     "Điều 12 áp dụng thế nào cho trường hợp ly hôn đơn phương?",
     "Nếu vi phạm Điều 5 thì bị xử lý ra sao trong trường hợp tái phạm?",
 ]
 
 
 def evaluate_fastpath() -> dict:
+    """A3 (coding_plan.md): case dương/âm nạp từ config.CHATBOT_EVAL_SET_PATH
+    (type == "fastpath") thay vì để trống — trước đây _FASTPATH_POSITIVE_CASES
+    luôn rỗng vì "cần biết số Điều thật trong corpus". Với corpus thật, thay
+    data/chatbot_eval_set.json bằng bộ 30-50 câu soạn theo corpus đó; các case
+    fastpath ở đây tự động được dùng lại, không cần sửa hàm này."""
     from backend.retrieval.citation_fastpath import try_lookup
 
-    false_positives = []
-    for q in _FASTPATH_NEGATIVE_CASES:
-        hit = try_lookup(q)
-        if hit is not None:
-            false_positives.append(q)
+    eval_set = _load_eval_set()
+    fastpath_items = [item for item in eval_set if item.get("type") == "fastpath"]
+    positive_items = [it for it in fastpath_items if it.get("expected_fastpath")]
+    negative_items = [it for it in fastpath_items if not it.get("expected_fastpath")]
 
-    n_zero_llm_calls_verified = 0  # positive-case verification needs a real corpus; see note below.
+    false_positives = []
+    for item in negative_items:
+        if try_lookup(item["question"]) is not None:
+            false_positives.append(item["question"])
+
+    false_negatives = []
+    wrong_content = []
+    for item in positive_items:
+        hit = try_lookup(item["question"])
+        if hit is None:
+            false_negatives.append(item["question"])
+            continue
+        expected_substr = item.get("expected_substring")
+        if expected_substr and expected_substr not in hit.answer:
+            wrong_content.append(item["question"])
+
+    n_negative = len(negative_items) or len(_FASTPATH_NEGATIVE_CASES_FALLBACK)
+    if not negative_items:
+        # data/chatbot_eval_set.json chưa có case fastpath -> fallback về
+        # bộ tối thiểu hard-coded để trục này vẫn chạy được (degrade, không
+        # bỏ qua hoàn toàn).
+        for q in _FASTPATH_NEGATIVE_CASES_FALLBACK:
+            if try_lookup(q) is not None:
+                false_positives.append(q)
+
     return {
-        "negative_cases_tested": len(_FASTPATH_NEGATIVE_CASES),
+        "negative_cases_tested": n_negative,
         "false_positives": false_positives,
-        "false_positive_rate": len(false_positives) / len(_FASTPATH_NEGATIVE_CASES) if _FASTPATH_NEGATIVE_CASES else 0.0,
-        "note": (
-            "Positive-case exact-match verification needs real corpus-specific "
-            "(question, expected article text) pairs — add them to "
-            "_FASTPATH_POSITIVE_CASES once data/corpus_law_pub.json is available "
-            "to hand-pick real Điều numbers from."
+        "false_positive_rate": len(false_positives) / n_negative if n_negative else 0.0,
+        "positive_cases_tested": len(positive_items),
+        "false_negatives": false_negatives,
+        "wrong_content": wrong_content,
+        "positive_accuracy": (
+            (len(positive_items) - len(false_negatives) - len(wrong_content)) / len(positive_items)
+            if positive_items else None
         ),
     }
 
 
-# ---------------------------------------------------------------------------
-# 4. Retrieval recall@k
-# ---------------------------------------------------------------------------
-def evaluate_retrieval_recall(hand_curated_qa: list[dict], k: int = 5) -> dict:
+def evaluate_retrieval_recall(hand_curated_qa: list, k: int = 5) -> dict:
     from backend.pipeline import collect_law_evidence
-
     if not hand_curated_qa:
         return {"n": 0, "recall_at_k": None, "note": "no hand-curated eval set provided"}
-
     recalls = []
     for item in hand_curated_qa:
         question = item["question"]
@@ -152,7 +129,6 @@ def evaluate_retrieval_recall(hand_curated_qa: list[dict], k: int = 5) -> dict:
         retrieved = collect_law_evidence(question)[:k]
         pred_aids = {c.aid for c in retrieved}
         recalls.append(len(pred_aids & gold_aids) / len(gold_aids))
-
     avg_recall = sum(recalls) / len(recalls) if recalls else None
     return {"n": len(recalls), "recall_at_k": avg_recall, "k": k}
 
@@ -160,8 +136,8 @@ def evaluate_retrieval_recall(hand_curated_qa: list[dict], k: int = 5) -> dict:
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--skip-generation", action="store_true",
-                         help="Skip axes that call the generation LLM (abstention uses generate indirectly "
-                              "via the refusal gate, which does NOT call the LLM, so it still runs).")
+                         help="Skip axes that call the generation LLM (abstention uses the refusal gate, "
+                              "which does NOT call the LLM, so it still runs).")
     args = parser.parse_args()
 
     from backend import config
@@ -170,34 +146,43 @@ def main():
     log.info("2) Abstention correctness (NEGATIVE_SAFETY_QUERIES)")
     log.info("=" * 60)
     abstention = evaluate_abstention()
-    log.info("Abstention rate: %d/%d (%.1f%%)", abstention["n_correct"], abstention["n"],
-              100 * abstention["rate"])
+    log.info("Abstention rate: %d/%d (%.1f%%)", abstention["n_correct"], abstention["n"], 100 * abstention["rate"])
     for d in abstention["details"]:
         if not d["abstained"]:
             log.warning("  FAILED to abstain on: %r", d["query"])
 
     log.info("=" * 60)
-    log.info("3) Citation fast-path — false-positive check")
+    log.info("3) Citation fast-path — positive/negative case check")
     log.info("=" * 60)
     fastpath = evaluate_fastpath()
-    log.info("Fast-path false-positive rate on situational questions: %.1f%% (%d/%d)",
-              100 * fastpath["false_positive_rate"], len(fastpath["false_positives"]),
-              fastpath["negative_cases_tested"])
+    log.info("Fast-path false-positive rate: %.1f%% (%d/%d)", 100 * fastpath["false_positive_rate"],
+              len(fastpath["false_positives"]), fastpath["negative_cases_tested"])
+    if fastpath["positive_cases_tested"]:
+        log.info("Fast-path positive accuracy: %.1f%% (%d case, %d false-negative, %d sai nội dung)",
+                  100 * (fastpath["positive_accuracy"] or 0), fastpath["positive_cases_tested"],
+                  len(fastpath["false_negatives"]), len(fastpath["wrong_content"]))
     if fastpath["false_positives"]:
-        log.warning("  Fast-path incorrectly triggered on: %s", fastpath["false_positives"])
+        log.warning("  Fast-path kích hoạt SAI trên: %s", fastpath["false_positives"])
+    if fastpath["false_negatives"]:
+        log.warning("  Fast-path KHÔNG kích hoạt (đáng lẽ phải) trên: %s", fastpath["false_negatives"])
+    if fastpath["wrong_content"]:
+        log.warning("  Fast-path trả sai nội dung trên: %s", fastpath["wrong_content"])
 
     log.info("=" * 60)
     log.info("4) Retrieval recall@k (hand-curated eval set)")
     log.info("=" * 60)
-    hand_curated = []
-    if config.CHATBOT_EVAL_SET_PATH.exists():
-        hand_curated = json.loads(config.CHATBOT_EVAL_SET_PATH.read_text(encoding="utf-8"))
-    else:
-        log.info("No hand-curated eval set at %s — skipping recall@k. See eval-harness-chatbot skill "
-                  "for the {question, gold_aids} format to create one.", config.CHATBOT_EVAL_SET_PATH)
+    hand_curated = _load_eval_set()
+    if not hand_curated:
+        log.info("No hand-curated eval set at %s — skipping recall@k. See A3 (coding_plan.md).",
+                  config.CHATBOT_EVAL_SET_PATH)
     recall = evaluate_retrieval_recall(hand_curated, k=5)
     if recall["recall_at_k"] is not None:
         log.info("Recall@%d: %.3f (n=%d)", recall["k"], recall["recall_at_k"], recall["n"])
+
+    # sample_questions dùng cho bước 1 (groundedness) và bước 5 (faithfulness/
+    # helpfulness) — chỉ lấy type=="retrieval": câu hỏi fastpath không qua LLM
+    # nên groundedness/faithfulness không áp dụng, đưa vào sẽ cho số liệu vô nghĩa.
+    retrieval_questions = [item["question"] for item in hand_curated if item.get("type") == "retrieval"][:5]
 
     if not args.skip_generation:
         log.info("=" * 60)
@@ -207,22 +192,56 @@ def main():
         from backend.generation.prompt_builder import allowed_citation_keys
         from backend.pipeline import collect_law_evidence
 
-        sample_questions = [item["question"] for item in hand_curated[:5]] or []
-        if not sample_questions:
-            log.info("No sample questions available (hand-curated eval set empty) — skipping groundedness.")
-        for q in sample_questions:
+        answers_by_question = {}
+        if not retrieval_questions:
+            log.info("No retrieval-type sample questions available — skipping groundedness.")
+        for q in retrieval_questions:
             answer = handle_chat_turn(f"eval-groundedness-{hash(q)}", q)
+            answers_by_question[q] = answer
             law_chunks = collect_law_evidence(q)
             allowed = allowed_citation_keys(law_chunks)
             g = evaluate_groundedness(answer.answer, allowed)
-            log.info("  %r -> citations=%d grounded=%d precision=%.2f", q, g["n_citations"], g["n_grounded"],
-                      g["precision"])
+            log.info("  %r -> citations=%d grounded=%d precision=%.2f", q, g["n_citations"], g["n_grounded"], g["precision"])
+
+        # --- 5) Faithfulness / Hallucination + Helpfulness (D1-D4) ---
+        log.info("=" * 60)
+        log.info("5) Faithfulness / Hallucination (claim-level, judge-based)")
+        log.info("=" * 60)
+        from test.eval_faithfulness import evaluate_faithfulness, judge_answer
+        from test.judge_client import is_judge_available
+
+        if not is_judge_available():
+            log.info("No external judge configured (ANTHROPIC_API_KEY not set) — skipping "
+                     "faithfulness/helpfulness axes. See coding_plan.md Nhóm D3 for how to configure one.")
+        else:
+            faith_scores, help_scores = [], []
+            for q, answer in answers_by_question.items():
+                law_chunks = collect_law_evidence(q)
+                try:
+                    f = evaluate_faithfulness(answer.answer, law_chunks)
+                    if f["faithfulness_score"] is not None:
+                        faith_scores.append(f["faithfulness_score"])
+                    j = judge_answer(q, answer.answer)
+                    if j.get("helpfulness") is not None:
+                        help_scores.append(j["helpfulness"])
+                    log.info("  %r -> faithfulness=%s hallucination=%s helpfulness=%s",
+                              q, f["faithfulness_score"], f["hallucination_rate"], j.get("helpfulness"))
+                except Exception as e:
+                    log.warning("  faithfulness/judge eval crashed on %r: %s (degrade, không chặn eval run)", q, e)
+
+            if faith_scores or help_scores:
+                avg_faith = sum(faith_scores) / len(faith_scores) if faith_scores else float("nan")
+                avg_hall = 1 - avg_faith if faith_scores else float("nan")
+                avg_help = sum(help_scores) / len(help_scores) if help_scores else float("nan")
+                log.info("Faithfulness: %.2f | Hallucination rate: %.2f | Helpfulness (avg 1-5): %.1f",
+                          avg_faith, avg_hall, avg_help)
     else:
-        log.info("--skip-generation set: skipping groundedness axis (calls the generation LLM).")
+        log.info("--skip-generation set: skipping groundedness + faithfulness/helpfulness axes "
+                 "(cả hai đều gọi LLM sinh câu trả lời trước khi đo).")
 
     log.info("=" * 60)
-    log.info("Done. This harness is meant to catch REGRESSIONS, not to produce a single leaderboard "
-              "number — see eval-harness-chatbot skill for why no single composite score is computed.")
+    log.info("Done. Harness này để bắt REGRESSION, không phải để ra 1 con số leaderboard duy nhất — "
+             "xem eval-harness-chatbot skill cho lý do không tính composite score.")
 
 
 if __name__ == "__main__":

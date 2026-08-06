@@ -1,0 +1,70 @@
+[
+  {
+    "question": "Hợp đồng là gì theo quy định của pháp luật dân sự?",
+    "gold_aids": [385],
+    "type": "retrieval",
+    "expected_supported": true
+  },
+  {
+    "question": "Lãi suất cho vay tối đa là bao nhiêu phần trăm một năm?",
+    "gold_aids": [468],
+    "type": "retrieval",
+    "expected_supported": true
+  },
+  {
+    "question": "Bên vay có được trả nợ trước hạn không?",
+    "gold_aids": [470],
+    "type": "retrieval",
+    "expected_supported": true
+  },
+  {
+    "question": "Phạm vi điều chỉnh của bộ luật này là gì?",
+    "gold_aids": [1],
+    "type": "retrieval",
+    "expected_supported": true
+  },
+  {
+    "question": "Nếu hai bên thỏa thuận lãi suất nhưng không ghi rõ số cụ thể thì tính lãi suất như thế nào khi có tranh chấp?",
+    "gold_aids": [468],
+    "type": "retrieval",
+    "expected_supported": true
+  },
+  {
+    "question": "Điều 1 nói gì?",
+    "type": "fastpath",
+    "expected_fastpath": true,
+    "expected_substring": "Bộ luật này quy định địa vị pháp lý"
+  },
+  {
+    "question": "dieu 385 quy dinh gi",
+    "type": "fastpath",
+    "expected_fastpath": true,
+    "expected_substring": "Hợp đồng là sự thỏa thuận"
+  },
+  {
+    "question": "Điều 468 khoản 2 nói gì?",
+    "type": "fastpath",
+    "expected_fastpath": true,
+    "expected_substring": "50% mức lãi suất giới hạn"
+  },
+  {
+    "question": "Điều 470 áp dụng thế nào nếu bên vay phá sản giữa kỳ hạn?",
+    "type": "fastpath",
+    "expected_fastpath": false
+  },
+  {
+    "question": "Nếu vi phạm Điều 468 thì bị xử lý ra sao trong trường hợp tái phạm?",
+    "type": "fastpath",
+    "expected_fastpath": false
+  },
+  {
+    "question": "Điều 999999 quy định gì?",
+    "type": "unsupported",
+    "expected_supported": false
+  },
+  {
+    "question": "quy định về xử phạt vi phạm giao thông khi vượt đèn đỏ là gì",
+    "type": "unsupported",
+    "expected_supported": false
+  }
+]

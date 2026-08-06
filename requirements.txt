@@ -3,6 +3,11 @@ python-dotenv>=1.0
 requests>=2.31
 
 # Embedding / reranking
+# B1 (coding_plan.md): >=3.1 khuyến nghị nếu dùng EMBEDDING_USE_MRL_TRUNCATE=true
+# (Qwen3-Embedding MRL truncate_dim). embed.py đã tự degrade êm (try/except)
+# về encode thường nếu bản cài đặt < 3.1, nên KHÔNG bump cứng ở đây để tránh
+# phá môi trường đang chạy model cũ (AITeamVN/Vietnamese_Embedding không cần
+# tính năng này).
 sentence-transformers>=3.0
 torch>=2.2
 
@@ -28,8 +33,10 @@ llmlingua>=0.2.2
 python-docx>=1.1
 pdfplumber>=0.11
 
-# --- Removed vs. the ALQAC-era requirements.txt --------------------------
-# (nothing was actually ALQAC-specific at the dependency level — the old
-# `requests` dependency was used for both the Case Content API client
-# [removed] AND is still needed transitively by sentence-transformers/HF
-# hub downloads, so it stays.)
+# --- A2 (coding_plan.md): HTTP server wrapper cho chat_pipeline.py -------
+fastapi>=0.110
+uvicorn>=0.29
+
+# --- D3 (coding_plan.md): judge client (test/judge_client.py) dùng requests
+# thuần (đã có ở trên) để gọi Anthropic API trực tiếp — KHÔNG thêm SDK/
+# LangChain, giữ tinh thần no-framework của core pipeline.
