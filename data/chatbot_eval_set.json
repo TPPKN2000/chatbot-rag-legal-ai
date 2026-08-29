@@ -1,70 +1,4410 @@
 [
   {
-    "question": "Hợp đồng là gì theo quy định của pháp luật dân sự?",
-    "gold_aids": [385],
+    "question": "Luật nào quy định về quy tắc giao thông đường bộ?",
+    "gold_aids": [
+      1
+    ],
     "type": "retrieval",
-    "expected_supported": true
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 1,
+    "node_id": "843a697f-7153-4c88-9cb5-fca17c300d35"
   },
   {
-    "question": "Lãi suất cho vay tối đa là bao nhiêu phần trăm một năm?",
-    "gold_aids": [468],
+    "question": "Yếu tố nào quyết định đến tình trạng giao thông trên đường bộ?",
+    "gold_aids": [
+      2
+    ],
     "type": "retrieval",
-    "expected_supported": true
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 2,
+    "node_id": "25489c09-a4aa-471e-bed2-09fae66ecb14"
   },
   {
-    "question": "Bên vay có được trả nợ trước hạn không?",
-    "gold_aids": [470],
+    "question": "Tôi muốn biết định nghĩa về phương tiện tham gia giao thông đường bộ là gì?",
+    "gold_aids": [
+      2
+    ],
     "type": "retrieval",
-    "expected_supported": true
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 2,
+    "node_id": "5c95ac7e-d627-4976-9b12-74c6e59dc4ba"
   },
   {
-    "question": "Phạm vi điều chỉnh của bộ luật này là gì?",
-    "gold_aids": [1],
+    "question": "Khi nào một phương tiện được coi là tham gia giao thông đường bộ?",
+    "gold_aids": [
+      2
+    ],
     "type": "retrieval",
-    "expected_supported": true
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 2,
+    "node_id": "5c95ac7e-d627-4976-9b12-74c6e59dc4ba"
   },
   {
-    "question": "Nếu hai bên thỏa thuận lãi suất nhưng không ghi rõ số cụ thể thì tính lãi suất như thế nào khi có tranh chấp?",
-    "gold_aids": [468],
+    "question": "Khi nhập khẩu xe đã qua sử dụng, tôi cần lưu ý gì về kiểu loại xe?",
+    "gold_aids": [
+      2
+    ],
     "type": "retrieval",
-    "expected_supported": true
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 2,
+    "node_id": "067b60de-40cc-482c-9181-bfbe5b4cd0e5"
   },
   {
-    "question": "Điều 1 nói gì?",
-    "type": "fastpath",
-    "expected_fastpath": true,
-    "expected_substring": "Bộ luật này quy định địa vị pháp lý"
+    "question": "Tôi đang dẫn dắt chó trên đường, tôi có phải tuân thủ quy định giao thông không?",
+    "gold_aids": [
+      2
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 2,
+    "node_id": "5e1d6920-1963-47a5-acea-7938800ae78c"
   },
   {
-    "question": "dieu 385 quy dinh gi",
-    "type": "fastpath",
-    "expected_fastpath": true,
-    "expected_substring": "Hợp đồng là sự thỏa thuận"
+    "question": "Những ai được coi là người tham gia giao thông đường bộ?",
+    "gold_aids": [
+      2
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 2,
+    "node_id": "48d704a9-5371-489b-ada6-a7f961632ff6"
   },
   {
-    "question": "Điều 468 khoản 2 nói gì?",
-    "type": "fastpath",
-    "expected_fastpath": true,
-    "expected_substring": "50% mức lãi suất giới hạn"
+    "question": "Khi nào thì được coi là ùn tắc giao thông?",
+    "gold_aids": [
+      2
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 2,
+    "node_id": "3764c2af-1a6b-4fac-aa35-c6265ce0305d"
   },
   {
-    "question": "Điều 470 áp dụng thế nào nếu bên vay phá sản giữa kỳ hạn?",
-    "type": "fastpath",
-    "expected_fastpath": false
+    "question": "Tai nạn giao thông đường bộ được định nghĩa như thế nào?",
+    "gold_aids": [
+      2
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 2,
+    "node_id": "fededb5b-90a9-41e9-a9f2-0b81e557bba5"
   },
   {
-    "question": "Nếu vi phạm Điều 468 thì bị xử lý ra sao trong trường hợp tái phạm?",
-    "type": "fastpath",
-    "expected_fastpath": false
+    "question": "Làm thế nào lực lượng chức năng có thể phát hiện và giải quyết tình huống giao thông?",
+    "gold_aids": [
+      2
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 2,
+    "node_id": "7d280235-6c45-4885-b942-c2361d6dc093"
   },
   {
-    "question": "Điều 999999 quy định gì?",
-    "type": "unsupported",
-    "expected_supported": false
+    "question": "Điều 3 Khoản 4 quy định về trách nhiệm của người tham gia giao thông đường bộ như thế nào?",
+    "gold_aids": [
+      3
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 3,
+    "node_id": "22a3cf17-74f4-4387-b9d6-75f34fe6ab04"
   },
   {
-    "question": "quy định về xử phạt vi phạm giao thông khi vượt đèn đỏ là gì",
-    "type": "unsupported",
-    "expected_supported": false
+    "question": "Làm thế nào để đảm bảo an toàn giao thông đường bộ?",
+    "gold_aids": [
+      4
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 4,
+    "node_id": "42258a45-2c65-4370-a0de-94482d07585b"
+  },
+  {
+    "question": "Vai trò của giáo dục pháp luật về giao thông đường bộ đối với trẻ em và học sinh?",
+    "gold_aids": [
+      4
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 4,
+    "node_id": "07d87e99-df25-4196-a5a5-45884d7c8c2d"
+  },
+  {
+    "question": "Trách nhiệm tuyên truyền pháp luật về giao thông đường bộ thuộc về cơ quan nào?",
+    "gold_aids": [
+      5
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 5,
+    "node_id": "265051da-f3d2-4224-ab8f-ec7678ec2766"
+  },
+  {
+    "question": "Điều 5 Khoản 3 quy định về trách nhiệm của cơ quan thông tin, truyền thông như thế nào?",
+    "gold_aids": [
+      5
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 5,
+    "node_id": "a7ff490c-a570-4cc9-9b80-72c9e25e2aaf"
+  },
+  {
+    "question": "Điều 5 Khoản 5 quy định về trách nhiệm của cơ quan nào trong việc tuyên truyền, phổ biến pháp luật về trật tự, an toàn giao thông đường bộ?",
+    "gold_aids": [
+      5
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 5,
+    "node_id": "f640d4a2-ab47-4a66-ba61-97078ebe6a71"
+  },
+  {
+    "question": "Giáo dục về an toàn giao thông đường bộ được thực hiện ở những cấp học nào?",
+    "gold_aids": [
+      6
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 6,
+    "node_id": "c0a2b9da-65cd-4274-95e3-ef35b7f73893"
+  },
+  {
+    "question": "Ai sẽ quyết định nội dung giảng dạy về luật giao thông trong các trường học?",
+    "gold_aids": [
+      6
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 6,
+    "node_id": "44419bab-dc51-4277-9af9-ef5584626821"
+  },
+  {
+    "question": "Cơ sở dữ liệu về giao thông đường bộ được quy định như thế nào?",
+    "gold_aids": [
+      7
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 7,
+    "node_id": "70c8d804-ad81-474e-8fb3-c9fcaa9d37cd"
+  },
+  {
+    "question": "Thông tin về giao thông đường bộ được lưu trữ như thế nào?",
+    "gold_aids": [
+      7
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 7,
+    "node_id": "70c8d804-ad81-474e-8fb3-c9fcaa9d37cd"
+  },
+  {
+    "question": "Điều 7 Khoản 1 Điểm đ quy định về cơ sở dữ liệu nào?",
+    "gold_aids": [
+      7
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 7,
+    "node_id": "c603e043-4533-4dc0-a0a8-9245648f22c6"
+  },
+  {
+    "question": "Theo Điều 7 Khoản 1 Điểm k, cơ sở dữ liệu nào liên quan đến công tác bảo đảm trật tự, an toàn giao thông đường bộ?",
+    "gold_aids": [
+      7
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 7,
+    "node_id": "d8eefb8e-2213-4774-a900-330b2fcb4522"
+  },
+  {
+    "question": "Tôi muốn biết thông tin về dữ liệu liên quan đến giao thông đường bộ, có quy định nào không?",
+    "gold_aids": [
+      7
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 7,
+    "node_id": "d8eefb8e-2213-4774-a900-330b2fcb4522"
+  },
+  {
+    "question": "Điều 8 quy định về vấn đề gì?",
+    "gold_aids": [
+      8
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 8,
+    "node_id": "6806e0c8-c17e-4444-b29b-c689cc430c2b"
+  },
+  {
+    "question": "Điều 8 Khoản 2 quy định về nội dung hợp tác quốc tế về trật tự, an toàn giao thông đường bộ là gì?",
+    "gold_aids": [
+      8
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 8,
+    "node_id": "f6bb0137-4b7d-457b-a57c-3cc879874123"
+  },
+  {
+    "question": "Điều 8 Khoản 2 Điểm a quy định về việc ký kết điều ước quốc tế, thỏa thuận quốc tế nào?",
+    "gold_aids": [
+      8
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 8,
+    "node_id": "574aad81-eb87-49d9-ba8b-5e5596e878cb"
+  },
+  {
+    "question": "Làm thế nào để lực lượng bảo đảm trật tự, an toàn giao thông đường bộ được nâng cao năng lực?",
+    "gold_aids": [
+      8
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 8,
+    "node_id": "26bd57df-1779-41c4-af9a-47e2cf4d6b0a"
+  },
+  {
+    "question": "Theo quy định tại Điều 8 Khoản 2 Điểm đ, việc giải quyết tai nạn giao thông đường bộ được thực hiện như thế nào?",
+    "gold_aids": [
+      8
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 8,
+    "node_id": "be032d03-19cf-48be-a8b9-ddaa186d2e7d"
+  },
+  {
+    "question": "Tôi muốn lái xe máy chuyên dùng trên đường bộ, tôi cần có giấy tờ gì?",
+    "gold_aids": [
+      9
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 9,
+    "node_id": "1aca7849-ff56-4444-97e6-bf8b782d8290"
+  },
+  {
+    "question": "Theo Điều 9 Khoản 2, hành vi điều khiển phương tiện tham gia giao thông đường bộ mà trong máu hoặc hơi thở có nồng độ cồn bị xử lý như thế nào?",
+    "gold_aids": [
+      9
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 9,
+    "node_id": "a60d3e56-f08b-4a2a-bea7-64a955be2399"
+  },
+  {
+    "question": "Lái xe có nồng độ cồn trong máu hoặc hơi thở có bị phạt không?",
+    "gold_aids": [
+      9
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 9,
+    "node_id": "a60d3e56-f08b-4a2a-bea7-64a955be2399"
+  },
+  {
+    "question": "Tôi đang lái xe trên đường, tôi có thể nghe điện thoại không?",
+    "gold_aids": [
+      9
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 9,
+    "node_id": "586746e0-0819-4f92-86a9-375c652eac76"
+  },
+  {
+    "question": "Tôi muốn nhập khẩu xe máy, cần phải đáp ứng những yêu cầu gì về chất lượng an toàn kỹ thuật và bảo vệ môi trường?",
+    "gold_aids": [
+      9
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 9,
+    "node_id": "0b5bc2b1-8fe8-4bdf-a551-2e040c66bc78"
+  },
+  {
+    "question": "Tôi có thể cải tạo xe ô tô thành xe chở người được không?",
+    "gold_aids": [
+      9
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 9,
+    "node_id": "e9ac2477-bcf7-405d-bc7f-51ac9f89dacf"
+  },
+  {
+    "question": "Điều 9 Khoản 11 quy định về hành vi nào bị cấm?",
+    "gold_aids": [
+      9
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 9,
+    "node_id": "011177a9-501e-4b5f-91bd-4ae1c4ef7b25"
+  },
+  {
+    "question": "Điều 9 Khoản 12 quy định về hành vi nào là vi phạm?",
+    "gold_aids": [
+      9
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 9,
+    "node_id": "f0bdda2e-6fe7-4fbf-a8c0-d194173b21c4"
+  },
+  {
+    "question": "Làm thế nào để kiểm định xe một cách trung thực?",
+    "gold_aids": [
+      9
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 9,
+    "node_id": "f0bdda2e-6fe7-4fbf-a8c0-d194173b21c4"
+  },
+  {
+    "question": "Điều 9 Khoản 13 quy định về hành vi chở hàng hóa như thế nào?",
+    "gold_aids": [
+      9
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 9,
+    "node_id": "f591ece1-897c-40b4-b958-bc7b02f3003e"
+  },
+  {
+    "question": "Tôi có thể chở hàng hóa trên xe vượt quá tải trọng cho phép không?",
+    "gold_aids": [
+      9
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 9,
+    "node_id": "f591ece1-897c-40b4-b958-bc7b02f3003e"
+  },
+  {
+    "question": "Lái xe có được phép chuyển tải hoặc xuống khách để trốn tránh phát hiện xe chở quá tải không?",
+    "gold_aids": [
+      9
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 9,
+    "node_id": "1d081ec8-695f-4e66-a674-91b584a7a977"
+  },
+  {
+    "question": "Theo Điều 9 Khoản 16, hành vi nào bị coi là gây mất trật tự, an toàn giao thông đường bộ?",
+    "gold_aids": [
+      9
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 9,
+    "node_id": "a450cca7-933a-4bf0-b0ad-3abb51c233d9"
+  },
+  {
+    "question": "Tôi có thể tự ý làm mất tác dụng của thiết bị giám sát giao thông không?",
+    "gold_aids": [
+      9
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 9,
+    "node_id": "58f27be1-fca5-4059-96f6-3f56d8f26cd2"
+  },
+  {
+    "question": "Tôi có thể rải vật sắc nhọn trên đường bộ không?",
+    "gold_aids": [
+      9
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 9,
+    "node_id": "1e5bdc61-8c78-4c4f-8058-ff7f6f698579"
+  },
+  {
+    "question": "Tôi có thể lợi dụng chức vụ của mình để can thiệp vào việc xử lý vi phạm giao thông không?",
+    "gold_aids": [
+      9
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 9,
+    "node_id": "f8b67df9-46ce-482c-ac88-f91cbb556f32"
+  },
+  {
+    "question": "Điều 9 Khoản 25 quy định về hành vi gì?",
+    "gold_aids": [
+      9
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 9,
+    "node_id": "21a9f46b-2fdf-41c4-b126-c0429fd60b8e"
+  },
+  {
+    "question": "Tôi có thể trốn tránh trách nhiệm khi vi phạm giao thông bằng cách cung cấp thông tin sai sự thật không?",
+    "gold_aids": [
+      9
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 9,
+    "node_id": "21a9f46b-2fdf-41c4-b126-c0429fd60b8e"
+  },
+  {
+    "question": "Tôi gây tai nạn giao thông đường bộ, tôi có nên bỏ trốn không?",
+    "gold_aids": [
+      9
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 9,
+    "node_id": "e3ad9e06-5669-42ce-980f-799941aa42c2"
+  },
+  {
+    "question": "Tôi thấy người bị tai nạn giao thông đường bộ, tôi có nên giúp đỡ họ không?",
+    "gold_aids": [
+      9
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 9,
+    "node_id": "e3ad9e06-5669-42ce-980f-799941aa42c2"
+  },
+  {
+    "question": "Tôi có thể điều khiển máy bay không người lái gần đường bộ không?",
+    "gold_aids": [
+      9
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 9,
+    "node_id": "e9433f9b-f2c2-4b33-ae02-77788a435ca1"
+  },
+  {
+    "question": "Làm thế nào để đảm bảo an toàn khi điều khiển phương tiện bay siêu nhẹ gần đường bộ?",
+    "gold_aids": [
+      9
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 9,
+    "node_id": "e9433f9b-f2c2-4b33-ae02-77788a435ca1"
+  },
+  {
+    "question": "Những nguyên tắc cơ bản nào được áp dụng trong pháp luật?",
+    "gold_aids": [
+      10
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 10,
+    "node_id": "ffc64efd-e7d6-4d39-9b3e-f84cb6f3d9c0"
+  },
+  {
+    "question": "Khi tham gia giao thông đường bộ, tôi cần đi ở vị trí nào?",
+    "gold_aids": [
+      10
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 10,
+    "node_id": "0f09601a-3c4b-4d1a-aa92-5f7e708d3288"
+  },
+  {
+    "question": "Theo Điều 10 Khoản 3, khi chở trẻ em dưới 10 tuổi và chiều cao dưới 1,35 mét trên xe ô tô, người lái xe phải làm gì?",
+    "gold_aids": [
+      10
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 10,
+    "node_id": "a32c8361-392c-48a7-a239-9b8e965efb49"
+  },
+  {
+    "question": "Điều 11 quy định về việc chấp hành báo hiệu đường bộ như thế nào?",
+    "gold_aids": [
+      11
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 11,
+    "node_id": "0f8c3b76-6d85-4149-b6fb-1395e40e2f49"
+  },
+  {
+    "question": "Tôi đang lái xe trên đường và thấy có nhiều biển báo hiệu, tôi phải ưu tiên như thế nào?",
+    "gold_aids": [
+      11
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 11,
+    "node_id": "182518ea-2f32-4591-a9fe-205b13c20c12"
+  },
+  {
+    "question": "Tôi đang lái xe và thấy một cột Km trên đường, nó có ý nghĩa gì?",
+    "gold_aids": [
+      11
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 11,
+    "node_id": "ada3d042-f44b-4f34-8f12-67f2ffd3e35d"
+  },
+  {
+    "question": "Tôi đang tìm hiểu về các loại thiết bị báo hiệu đường bộ, có quy định nào nói về âm thanh không?",
+    "gold_aids": [
+      11
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 11,
+    "node_id": "7b154164-6aa5-4398-9c63-3807e5c6b20a"
+  },
+  {
+    "question": "Người điều khiển giao thông có nhiệm vụ gì?",
+    "gold_aids": [
+      11
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 11,
+    "node_id": "d10082f5-c59e-4725-94b0-4d320dda61a4"
+  },
+  {
+    "question": "Khi tham gia giao thông đường bộ, tôi thấy người điều khiển giao thông giơ tay ngang, tôi nên dừng lại hay tiếp tục đi?",
+    "gold_aids": [
+      11
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 11,
+    "node_id": "76326c0a-3ce9-4024-9059-268ce7a6d594"
+  },
+  {
+    "question": "Khi tham gia giao thông, tôi thấy đèn giao thông màu đỏ, có được phép đi qua không?",
+    "gold_aids": [
+      11
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 11,
+    "node_id": "cd3c867f-bc11-4b2d-99dc-3a734d3e1fe6"
+  },
+  {
+    "question": "Khi tôi thấy biển báo có nội dung cấm, nó có ý nghĩa gì?",
+    "gold_aids": [
+      11
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 11,
+    "node_id": "9a3df6e5-e2b2-4bd9-beb9-2f34685b5360"
+  },
+  {
+    "question": "Theo Điều 11 Khoản 7, cọc tiêu, tường bảo vệ có tác dụng gì?",
+    "gold_aids": [
+      11
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 11,
+    "node_id": "59813187-c64e-45a2-acc8-5503aa13d8ee"
+  },
+  {
+    "question": "Theo Điều 11 Khoản 9, mục đích sử dụng đinh phản quang, tiêu phản quang là gì?",
+    "gold_aids": [
+      11
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 11,
+    "node_id": "ae679f34-3f06-41df-a24b-8c541fda0294"
+  },
+  {
+    "question": "Tôi muốn biết mục đích sử dụng đinh phản quang, tiêu phản quang trên đường?",
+    "gold_aids": [
+      11
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 11,
+    "node_id": "ae679f34-3f06-41df-a24b-8c541fda0294"
+  },
+  {
+    "question": "Tôi đang lái xe trên đường, tôi thấy cột Km và cọc H, chúng có ý nghĩa gì?",
+    "gold_aids": [
+      11
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 11,
+    "node_id": "cfd42470-ab21-4f9a-b1b1-f5a6486519de"
+  },
+  {
+    "question": "Tôi đang đi đường và thấy có cột Km và cọc H, mục đích của chúng là gì?",
+    "gold_aids": [
+      11
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 11,
+    "node_id": "cfd42470-ab21-4f9a-b1b1-f5a6486519de"
+  },
+  {
+    "question": "Làm thế nào để cảnh báo nguy hiểm cho người tham gia giao thông đường bộ?",
+    "gold_aids": [
+      11
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 11,
+    "node_id": "39c55b62-5d51-49bb-a676-e8ba39173e73"
+  },
+  {
+    "question": "Điều 12 quy định về việc chấp hành quy định về tốc độ và khoảng cách giữa các xe như thế nào?",
+    "gold_aids": [
+      12
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 12,
+    "node_id": "b5128988-14cf-4b8d-9df0-826831bd4b5f"
+  },
+  {
+    "question": "Khi lái xe, tôi cần phải làm gì để đảm bảo an toàn?",
+    "gold_aids": [
+      12
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 12,
+    "node_id": "b5128988-14cf-4b8d-9df0-826831bd4b5f"
+  },
+  {
+    "question": "Làm thế nào để tránh va chạm với xe phía trước khi lái xe?",
+    "gold_aids": [
+      12
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 12,
+    "node_id": "43c03ded-f228-438d-92fe-49ce10f1f172"
+  },
+  {
+    "question": "Khi lái xe, tôi cần chú ý đến những yếu tố nào để đảm bảo an toàn?",
+    "gold_aids": [
+      12
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 12,
+    "node_id": "d913d7aa-78f0-49b1-9f88-518cbeae2f80"
+  },
+  {
+    "question": "Tôi đang lái xe và thấy người đi bộ đang qua đường tại nơi có vạch kẻ đường, tôi phải làm gì?",
+    "gold_aids": [
+      12
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 12,
+    "node_id": "7452e7d7-7eea-49b6-83f7-88ecd39424c4"
+  },
+  {
+    "question": "Tôi đang lái xe và thấy một biển báo hiệu cảnh báo nguy hiểm, tôi phải giảm tốc độ hay không?",
+    "gold_aids": [
+      12
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 12,
+    "node_id": "5c5645a4-9354-45e4-ab21-a2bbde698f65"
+  },
+  {
+    "question": "Khi lái xe qua đường vòng hoặc đường đèo, tôi cần làm gì?",
+    "gold_aids": [
+      12
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 12,
+    "node_id": "123a0495-ee5b-4106-9cde-28e4f5d7ec4b"
+  },
+  {
+    "question": "Tại sao người lái xe cần giảm tốc độ khi qua đường hẹp hoặc đường quanh co?",
+    "gold_aids": [
+      12
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 12,
+    "node_id": "123a0495-ee5b-4106-9cde-28e4f5d7ec4b"
+  },
+  {
+    "question": "Khi lái xe qua cầu hẹp hoặc đập tràn cần lưu ý những gì?",
+    "gold_aids": [
+      12
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 12,
+    "node_id": "89f0c047-b6dd-40e3-8096-607fd3451879"
+  },
+  {
+    "question": "Khi lái xe gần trường học hoặc bệnh viện, tôi cần lưu ý gì?",
+    "gold_aids": [
+      12
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 12,
+    "node_id": "71c26e3a-f054-444d-8f44-23430a58662c"
+  },
+  {
+    "question": "Điều 12 Khoản 3 Điểm k quy định về việc gặp xe vận chuyển hàng siêu trường, siêu trọng, hàng hóa nguy hiểm; đoàn người đi bộ như thế nào?",
+    "gold_aids": [
+      12
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 12,
+    "node_id": "91913488-11a7-4548-98f5-0e74e6af2aae"
+  },
+  {
+    "question": "Điều 12 Khoản 3 Điểm l quy định về trường hợp nào?",
+    "gold_aids": [
+      12
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 12,
+    "node_id": "e79c2f15-8070-4b80-8c68-586900aae0bb"
+  },
+  {
+    "question": "Khi đi xe trong trời mưa, gió, sương, khói, bụi, mặt đường trơn trượt, lầy lội, có nhiều đất đá, vật liệu rơi vãi thì cần chú ý gì?",
+    "gold_aids": [
+      12
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 12,
+    "node_id": "f85f7548-73b0-4b00-9800-9716d9b753f5"
+  },
+  {
+    "question": "Bộ trưởng Bộ Xây dựng quy định gì về tốc độ và khoảng cách an toàn của xe cơ giới, xe máy chuyên dùng tham gia giao thông đường bộ?",
+    "gold_aids": [
+      12
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 12,
+    "node_id": "71640f65-abab-4997-80ac-778bfcf8ad5c"
+  },
+  {
+    "question": "Cơ quan nào chịu trách nhiệm quy định về tốc độ và khoảng cách an toàn của phương tiện giao thông trên đường?",
+    "gold_aids": [
+      12
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 12,
+    "node_id": "71640f65-abab-4997-80ac-778bfcf8ad5c"
+  },
+  {
+    "question": "Theo Điều 13 Khoản 2, khi tham gia giao thông trên đường có nhiều làn đường cho xe đi cùng chiều, người điều khiển phương tiện cần phải làm gì?",
+    "gold_aids": [
+      13
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 13,
+    "node_id": "20cdd8cc-873f-4fc4-ade9-d528ba963274"
+  },
+  {
+    "question": "Làm thế nào để đảm bảo an toàn khi chuyển làn đường trên đường cao tốc?",
+    "gold_aids": [
+      13
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 13,
+    "node_id": "20cdd8cc-873f-4fc4-ade9-d528ba963274"
+  },
+  {
+    "question": "Làm thế nào để vượt xe trên đường một chiều?",
+    "gold_aids": [
+      14
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 14,
+    "node_id": "cb4473f4-da5d-45da-a418-7bb4b88b90e5"
+  },
+  {
+    "question": "Tôi đang lái xe và muốn vượt xe phía trước, nhưng xe đó đang có tín hiệu rẽ trái. Tôi có thể vượt bên phải không?",
+    "gold_aids": [
+      14
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 14,
+    "node_id": "e19cd718-b712-4959-abd3-2077f3f21d96"
+  },
+  {
+    "question": "Tôi đang đi trên cầu và chỉ có một làn đường, tôi cần lưu ý gì?",
+    "gold_aids": [
+      14
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 14,
+    "node_id": "dbd97bde-163e-4c78-877f-0bf440c99746"
+  },
+  {
+    "question": "Điều 14 Khoản 6 Điểm d quy định về việc điều khiển xe trên đường hai chiều tại khu vực đỉnh dốc có tầm nhìn bị hạn chế như thế nào?",
+    "gold_aids": [
+      14
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 14,
+    "node_id": "b3a2873a-1c2d-495c-97cc-674282b458b4"
+  },
+  {
+    "question": "Tôi đang lái xe và thấy người đi bộ qua đường, tôi phải làm gì?",
+    "gold_aids": [
+      14
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 14,
+    "node_id": "e6f81065-1c39-481b-8a72-b0d054334d7d"
+  },
+  {
+    "question": "Khi đi qua hầm đường bộ, tôi cần chú ý điều gì để đảm bảo an toàn?",
+    "gold_aids": [
+      14
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 14,
+    "node_id": "74fb126e-26a9-49e4-87d9-afb55c65835c"
+  },
+  {
+    "question": "Theo Điều 15 Khoản 2, người điều khiển phương tiện tham gia giao thông đường bộ cần làm gì trước khi chuyển hướng?",
+    "gold_aids": [
+      15
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 15,
+    "node_id": "0fc4f6b7-8c79-4fd5-b8e2-3489c2be9ff4"
+  },
+  {
+    "question": "Khi chuyển hướng, người lái xe phải nhường đường cho những ai?",
+    "gold_aids": [
+      15
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 15,
+    "node_id": "6eb4bc09-2375-45f4-8252-5108e00597f3"
+  },
+  {
+    "question": "Tôi cần làm gì khi lùi xe để không gây tai nạn?",
+    "gold_aids": [
+      16
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 16,
+    "node_id": "03061922-dade-4e5c-af1b-debe7bf44144"
+  },
+  {
+    "question": "Làm thế nào để tránh va chạm khi lùi xe?",
+    "gold_aids": [
+      16
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 16,
+    "node_id": "03061922-dade-4e5c-af1b-debe7bf44144"
+  },
+  {
+    "question": "Khi gặp xe đi ngược chiều, tôi nên làm gì để đảm bảo an toàn?",
+    "gold_aids": [
+      17
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 17,
+    "node_id": "25decabb-7e4a-407d-aa95-7b0411b5d6bd"
+  },
+  {
+    "question": "Tôi đang lái xe trên đường và gặp một xe đi ngược chiều, tôi phải làm gì để tránh va chạm?",
+    "gold_aids": [
+      17
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 17,
+    "node_id": "25decabb-7e4a-407d-aa95-7b0411b5d6bd"
+  },
+  {
+    "question": "Trên đường hẹp, có chỗ tránh xe, xe đi ngược chiều phải làm gì?",
+    "gold_aids": [
+      17
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 17,
+    "node_id": "620961e1-f8a1-45f9-9461-932bc783e7db"
+  },
+  {
+    "question": "Khi rời khỏi xe sau khi đỗ, tôi cần thực hiện biện pháp gì?",
+    "gold_aids": [
+      18
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 18,
+    "node_id": "87c4f795-58f2-40ef-887f-0fc617927a06"
+  },
+  {
+    "question": "Khi đỗ xe, tôi cần làm gì để thông báo cho người khác?",
+    "gold_aids": [
+      18
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 18,
+    "node_id": "5980f7d3-3374-46f7-b6e0-51dd02f1145d"
+  },
+  {
+    "question": "Khi lái xe, tôi cần làm gì để đảm bảo an toàn cho người đi bộ và các phương tiện khác?",
+    "gold_aids": [
+      18
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 18,
+    "node_id": "47a546ef-8b1c-4d98-9681-39641baead7f"
+  },
+  {
+    "question": "Theo quy định tại Điều 18 Khoản 4 Điểm c, người tham gia giao thông có được phép dừng xe trên cầu không?",
+    "gold_aids": [
+      18
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 18,
+    "node_id": "d6bfdefd-2f6f-43d1-b073-56869091852a"
+  },
+  {
+    "question": "Theo Điều 18 Khoản 4 Điểm k, quy định về khoảng cách bố trí đường cho xe ra, vào trụ sở cơ quan, tổ chức là bao nhiêu?",
+    "gold_aids": [
+      18
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 18,
+    "node_id": "27da2a5c-34d2-46af-8efc-455086f6b0fb"
+  },
+  {
+    "question": "Khi đi xe trên đường hẹp, chỉ đủ cho một làn xe cơ giới thì làm thế nào?",
+    "gold_aids": [
+      18
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 18,
+    "node_id": "29769c39-2dac-4e89-ae9a-50b9cc6a3710"
+  },
+  {
+    "question": "Làm thế nào để dừng xe an toàn trên đường phố?",
+    "gold_aids": [
+      18
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 18,
+    "node_id": "afe92151-dabe-46da-a7f0-d3d6d235c26a"
+  },
+  {
+    "question": "Theo quy định của Điều 19 Khoản 1, khi nào thì được mở cửa xe?",
+    "gold_aids": [
+      19
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 19,
+    "node_id": "842c42cf-92dc-451c-9b75-c1e59429f339"
+  },
+  {
+    "question": "Làm thế nào để mở cửa xe một cách an toàn?",
+    "gold_aids": [
+      19
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 19,
+    "node_id": "842c42cf-92dc-451c-9b75-c1e59429f339"
+  },
+  {
+    "question": "Điều 19 Khoản 2 quy định như thế nào về việc mở cửa xe?",
+    "gold_aids": [
+      19
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 19,
+    "node_id": "c7ab8383-2495-41ce-8897-c4951f3c1de7"
+  },
+  {
+    "question": "Người lái xe cần làm gì khi trời mưa hoặc có sương mù?",
+    "gold_aids": [
+      20
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 20,
+    "node_id": "46f94cf5-ece7-430d-8a18-ab022d7e41a0"
+  },
+  {
+    "question": "Tôi phải làm gì khi lái xe vào ban đêm để không bị phạt?",
+    "gold_aids": [
+      20
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 20,
+    "node_id": "bc4568a1-1864-4ffc-9c17-9b6103444d09"
+  },
+  {
+    "question": "Khi nào thì người lái xe nên tắt đèn chiếu xa và bật đèn chiếu gần?",
+    "gold_aids": [
+      20
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 20,
+    "node_id": "bc4568a1-1864-4ffc-9c17-9b6103444d09"
+  },
+  {
+    "question": "Tôi đang lái xe qua khu đông dân cư vào ban đêm, có hệ thống chiếu sáng đang hoạt động, tôi cần lưu ý gì?",
+    "gold_aids": [
+      20
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 20,
+    "node_id": "8f3d9931-f8ed-476f-8615-5a13c7fd617f"
+  },
+  {
+    "question": "Tại sao khi đi qua khu đông dân cư vào ban đêm, tôi cần chú ý đến hệ thống chiếu sáng?",
+    "gold_aids": [
+      20
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 20,
+    "node_id": "8f3d9931-f8ed-476f-8615-5a13c7fd617f"
+  },
+  {
+    "question": "Làm thế nào khi gặp xe đi ngược chiều trên đường?",
+    "gold_aids": [
+      20
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 20,
+    "node_id": "3d057642-4c02-411e-a88d-e78cd84f0cd7"
+  },
+  {
+    "question": "Tôi đang điều khiển xe máy chuyên dùng trên đường bộ, tôi cần làm gì để đảm bảo an toàn?",
+    "gold_aids": [
+      20
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 20,
+    "node_id": "0334ed94-cb57-4915-a55f-dc545f8d2b24"
+  },
+  {
+    "question": "Khi tham gia giao thông, tôi có thể sử dụng còi như thế nào để đảm bảo an toàn?",
+    "gold_aids": [
+      21
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 21,
+    "node_id": "774ab580-eed7-441a-b9a7-6cef51874cd4"
+  },
+  {
+    "question": "Điều 21 Khoản 1 quy định về việc sử dụng tín hiệu còi của phương tiện tham gia giao thông đường bộ trong những trường hợp nào?",
+    "gold_aids": [
+      21
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 21,
+    "node_id": "3fae7c3f-1cb9-4135-b695-f95c72f5c170"
+  },
+  {
+    "question": "Theo quy định tại Điều 21 Khoản 1 Điểm a, báo hiệu cho người tham gia giao thông đường bộ khi xuất hiện tình huống gì?",
+    "gold_aids": [
+      21
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 21,
+    "node_id": "02594b45-b0ea-4caf-9a3d-83be8512c143"
+  },
+  {
+    "question": "Người lái xe cần thực hiện hành động gì trước khi vượt xe khác?",
+    "gold_aids": [
+      21
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 21,
+    "node_id": "09948f3e-f629-4c8b-9d22-1377f037fd44"
+  },
+  {
+    "question": "Tôi có thể sử dụng còi xe vào ban đêm trong khu vực đông dân cư không?",
+    "gold_aids": [
+      21
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 21,
+    "node_id": "98887709-497e-479b-b33a-72bbf6cf0716"
+  },
+  {
+    "question": "Theo Điều 22 Khoản 1, quy định về việc nhường đường tại nơi đường giao nhau giữa đường không ưu tiên với đường ưu tiên hoặc giữa đường nhánh với đường chính?",
+    "gold_aids": [
+      22
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 22,
+    "node_id": "bf5eacad-0213-4932-910f-65f10925c94a"
+  },
+  {
+    "question": "Tôi đang điều khiển xe cứu thương, liệu tôi có được quyền ưu tiên khi tham gia giao thông?",
+    "gold_aids": [
+      23
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 23,
+    "node_id": "add5cee9-08e4-4b04-9dbc-5ca88786d0fb"
+  },
+  {
+    "question": "Khi gặp xe máy chuyên dùng trên đường, tôi cần làm gì để đảm bảo an toàn?",
+    "gold_aids": [
+      23
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 23,
+    "node_id": "6503c866-a4ef-4dcb-93cb-ea81b7dfb8cd"
+  },
+  {
+    "question": "Làm thế nào để đảm bảo an toàn khi tham gia giao thông?",
+    "gold_aids": [
+      23
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 23,
+    "node_id": "3c325ec6-8d2e-4b3b-b03d-0564cc8d67d0"
+  },
+  {
+    "question": "Khi đi qua đường sắt, tôi cần phải biết quy định gì để đảm bảo an toàn?",
+    "gold_aids": [
+      24
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 24,
+    "node_id": "e483810d-37db-4bbb-8b15-5d26fe3c8a68"
+  },
+  {
+    "question": "Tôi muốn vào đường cao tốc, tôi phải làm những bước gì?",
+    "gold_aids": [
+      25
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 25,
+    "node_id": "466f2105-11e9-4eb3-ab7b-90cb8094dbb9"
+  },
+  {
+    "question": "Tôi đang tìm hiểu về luật giao thông đường bộ, nhưng không thấy thông tin cụ thể về một số quy tắc. Liệu có quy định chung nào cho các trường hợp khác không?",
+    "gold_aids": [
+      25
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 25,
+    "node_id": "ccacc4b9-10da-44dd-b988-da169255e66b"
+  },
+  {
+    "question": "Điều 26 Khoản 3 quy định về các quy tắc giao thông đường bộ nào?",
+    "gold_aids": [
+      26
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 26,
+    "node_id": "399bce01-79ba-4d6b-b3cb-e26a6bf1f53b"
+  },
+  {
+    "question": "Khi tham gia giao thông, tôi cần phải biết những quy tắc nào để đảm bảo an toàn?",
+    "gold_aids": [
+      26
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 26,
+    "node_id": "399bce01-79ba-4d6b-b3cb-e26a6bf1f53b"
+  },
+  {
+    "question": "Tôi cần biết xe nào được coi là xe ưu tiên?",
+    "gold_aids": [
+      27
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 27,
+    "node_id": "310cc444-a754-4a6b-8361-58ba314962ca"
+  },
+  {
+    "question": "Khi qua đường giao nhau, xe cứu thương có được quyền đi trước xe khác không?",
+    "gold_aids": [
+      27
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 27,
+    "node_id": "461316b5-b0be-4c50-b28f-77d7924360df"
+  },
+  {
+    "question": "Tôi đang điều khiển xe cứu hộ, có được phép sử dụng đèn nhấp nháy màu xanh không?",
+    "gold_aids": [
+      27
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 27,
+    "node_id": "08e9dcee-01ef-496e-99fd-8c6f73a59b9a"
+  },
+  {
+    "question": "Tôi muốn lắp đặt thiết bị phát tín hiệu cho xe ưu tiên, cần làm thủ tục gì?",
+    "gold_aids": [
+      27
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 27,
+    "node_id": "f34506b6-6a15-4586-b1ee-06b2e6851e1b"
+  },
+  {
+    "question": "Tôi cần phải tuân thủ quy định gì khi muốn chở người trên xe ô tô chở hàng?",
+    "gold_aids": [
+      28
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 28,
+    "node_id": "fae5bb83-239a-4b58-b41a-0b8d3141b5c0"
+  },
+  {
+    "question": "Trong trường hợp thiên tai, tôi có thể chở người đến nơi an toàn không?",
+    "gold_aids": [
+      28
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 28,
+    "node_id": "c3d81158-3dd7-4238-ae69-ba301f76a01a"
+  },
+  {
+    "question": "Theo Điều 29 Khoản 1 Điểm b, việc nối xe kéo với xe được kéo cần đảm bảo những yêu cầu gì?",
+    "gold_aids": [
+      29
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 29,
+    "node_id": "9b2fcc2c-4d65-4b8c-9299-9730c3cbc5e0"
+  },
+  {
+    "question": "Tôi đang chuẩn bị nối xe kéo với xe được kéo, nhưng hệ thống hãm của xe được kéo không còn hoạt động. Tôi cần làm gì để đảm bảo an toàn?",
+    "gold_aids": [
+      29
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 29,
+    "node_id": "9b2fcc2c-4d65-4b8c-9299-9730c3cbc5e0"
+  },
+  {
+    "question": "Khi tôi kéo một chiếc xe bị hỏng, tôi cần chuẩn bị những biển báo và đèn gì?",
+    "gold_aids": [
+      29
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 29,
+    "node_id": "787e403c-998d-4144-aa33-33448ebbf950"
+  },
+  {
+    "question": "Điều 29 Khoản 2 quy định về việc kéo rơ moóc, sơ mi rơ moóc như thế nào?",
+    "gold_aids": [
+      29
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 29,
+    "node_id": "6e8e4c77-f20b-4e78-9a26-1f68457030ef"
+  },
+  {
+    "question": "Theo Điều 29 Khoản 3, có được phép chở người trên xe được kéo không?",
+    "gold_aids": [
+      29
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 29,
+    "node_id": "4faca3b9-02cc-4e7a-8b27-66fcba3698d1"
+  },
+  {
+    "question": "Điều 30 quy định về những đối tượng nào tham gia giao thông đường bộ?",
+    "gold_aids": [
+      30
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 30,
+    "node_id": "73be5073-522e-4a7a-ba3a-a7605b7b9afd"
+  },
+  {
+    "question": "Điều 30 Khoản 1 quy định gì về người đi bộ?",
+    "gold_aids": [
+      30
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 30,
+    "node_id": "0e1576d8-6123-4438-a0fa-ca00937d313f"
+  },
+  {
+    "question": "Có quy định nào về việc đi bộ trên đường không?",
+    "gold_aids": [
+      30
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 30,
+    "node_id": "0e1576d8-6123-4438-a0fa-ca00937d313f"
+  },
+  {
+    "question": "Tôi nên đi bộ ở đâu khi không có vỉa hè?",
+    "gold_aids": [
+      30
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 30,
+    "node_id": "9414d458-bc1d-4e3d-86a5-f5ed9e05db5e"
+  },
+  {
+    "question": "Tôi không thấy đèn tín hiệu hoặc vạch kẻ đường, tôi nên làm gì khi qua đường?",
+    "gold_aids": [
+      30
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 30,
+    "node_id": "a5be90d4-f091-47e5-8fa6-7a52cbc66300"
+  },
+  {
+    "question": "Theo Điều 30 Khoản 2 Điểm b, người khuyết tật sử dụng xe lăn có động cơ hoặc không có động cơ phải đi ở đâu?",
+    "gold_aids": [
+      30
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 30,
+    "node_id": "4776a20a-b3bc-47e8-bcc3-3d798720d51b"
+  },
+  {
+    "question": "Tôi bị khiếm thị, tôi cần mang gì khi đi trên đường bộ?",
+    "gold_aids": [
+      30
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 30,
+    "node_id": "9fba6b88-ddb7-4524-8374-d77d31d44ec2"
+  },
+  {
+    "question": "Người bị mất năng lực hành vi dân sự cần có ai khi đi bộ trên đường?",
+    "gold_aids": [
+      30
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 30,
+    "node_id": "ec2dabc8-2378-400d-9f46-73cf8f10042b"
+  },
+  {
+    "question": "Người không thể tự chăm sóc bản thân khi đi bộ trên đường cần có sự hỗ trợ như thế nào?",
+    "gold_aids": [
+      30
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 30,
+    "node_id": "ec2dabc8-2378-400d-9f46-73cf8f10042b"
+  },
+  {
+    "question": "Tôi có trách nhiệm giúp đỡ ai khi họ đi qua đường?",
+    "gold_aids": [
+      30
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 30,
+    "node_id": "b757da80-930c-4893-ba4e-ec4bd2323177"
+  },
+  {
+    "question": "Tôi cần phải đảm bảo an toàn khi đi xe đạp máy, quy định pháp luật yêu cầu tôi phải làm gì?",
+    "gold_aids": [
+      31
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 31,
+    "node_id": "2563aaa5-e4e1-42d0-a700-110249f8181f"
+  },
+  {
+    "question": "Làm thế nào để đảm bảo an toàn khi chở hàng hóa trên xe đạp?",
+    "gold_aids": [
+      31
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 31,
+    "node_id": "40f67fe0-3a0f-470b-9f2a-565040757b0c"
+  },
+  {
+    "question": "Điều 33 quy định về người lái xe, người được chở và hàng hóa trên xe mô tô, xe gắn máy như thế nào?",
+    "gold_aids": [
+      33
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 33,
+    "node_id": "13c05456-c450-4b5a-aa17-b6a1ea4a9795"
+  },
+  {
+    "question": "Tôi đang lái xe máy, tôi có thể chở hai người được không?",
+    "gold_aids": [
+      33
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 33,
+    "node_id": "8f02af6d-72c3-4b75-9b89-d3906f09c6db"
+  },
+  {
+    "question": "Khi nào người lái xe máy được phép chở hai người?",
+    "gold_aids": [
+      33
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 33,
+    "node_id": "8f02af6d-72c3-4b75-9b89-d3906f09c6db"
+  },
+  {
+    "question": "Điều 33 Khoản 1 Điểm b quy định về việc áp giải người có hành vi vi phạm pháp luật như thế nào?",
+    "gold_aids": [
+      33
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 33,
+    "node_id": "1a64bed6-27ba-4fab-a0b2-8fc9b7d18294"
+  },
+  {
+    "question": "Tôi phải làm gì khi lái xe máy để đảm bảo an toàn?",
+    "gold_aids": [
+      33
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 33,
+    "node_id": "b938c2b9-496e-432f-8a73-2a281a9b2f99"
+  },
+  {
+    "question": "Mũ bảo hiểm có bắt buộc khi đi xe máy không?",
+    "gold_aids": [
+      33
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 33,
+    "node_id": "b938c2b9-496e-432f-8a73-2a281a9b2f99"
+  },
+  {
+    "question": "Điều 33 Khoản 3 Điểm c quy định về việc sử dụng thiết bị gì trên phương tiện giao thông?",
+    "gold_aids": [
+      33
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 33,
+    "node_id": "4cbd2842-38ca-4670-bc03-ab69e2a79ea2"
+  },
+  {
+    "question": "Khi điều khiển xe mô tô, xe gắn máy, tôi có thể đi bằng một bánh không?",
+    "gold_aids": [
+      33
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 33,
+    "node_id": "fdd63f0f-b9ee-4adb-9d22-d606e08afca1"
+  },
+  {
+    "question": "Điều 33 Khoản 3 Điểm đ quy định về việc sử dụng xe như thế nào?",
+    "gold_aids": [
+      33
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 33,
+    "node_id": "7d646457-998e-4d29-bdfb-5a24dd2a82f8"
+  },
+  {
+    "question": "Tôi có thể sử dụng chân chống khi xe đang chạy không?",
+    "gold_aids": [
+      33
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 33,
+    "node_id": "a4b90482-a7d4-4b65-97d0-401c639d3302"
+  },
+  {
+    "question": "Tôi đang tham gia giao thông và có một hành động không đúng quy định, nhưng không biết hành động đó có bị xử phạt không. Tôi cần làm gì?",
+    "gold_aids": [
+      33
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 33,
+    "node_id": "fa4813a8-c28a-49bc-ba12-a851900a934f"
+  },
+  {
+    "question": "Khi đi xe máy, tôi cần lưu ý gì để không vi phạm quy định?",
+    "gold_aids": [
+      33
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 33,
+    "node_id": "339d6b27-2389-4949-bac4-a942f3ff42e0"
+  },
+  {
+    "question": "Tôi đang tìm hiểu về quy định sử dụng ô trong giao thông, có thể cho tôi biết thêm thông tin không?",
+    "gold_aids": [
+      33
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 33,
+    "node_id": "068a037f-67ae-4515-8313-685bb57bcead"
+  },
+  {
+    "question": "Nếu tôi tham gia vào một hoạt động gây ảnh hưởng đến trật tự giao thông, tôi có thể bị xử phạt không?",
+    "gold_aids": [
+      33
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 33,
+    "node_id": "0a8bcf01-7a01-4a9b-a4f3-ce82c7311d66"
+  },
+  {
+    "question": "Làm thế nào để phân loại xe ô tô, xe máy, xe đạp?",
+    "gold_aids": [
+      34
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 34,
+    "node_id": "64e67668-5b11-411a-a9c5-ae2b79977c00"
+  },
+  {
+    "question": "Theo Điều 34 Khoản 1, xe cơ giới bao gồm những gì?",
+    "gold_aids": [
+      34
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 34,
+    "node_id": "17cc4123-d2ee-470a-87d4-b1782c10a750"
+  },
+  {
+    "question": "Tôi muốn biết định nghĩa về xe cơ giới trong luật giao thông đường bộ?",
+    "gold_aids": [
+      34
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 34,
+    "node_id": "17cc4123-d2ee-470a-87d4-b1782c10a750"
+  },
+  {
+    "question": "Theo quy định tại Điều 34 Khoản 1 Điểm b, rơ moóc là gì?",
+    "gold_aids": [
+      34
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 34,
+    "node_id": "1463002b-8243-4609-a18d-d4531d2cad39"
+  },
+  {
+    "question": "Loại xe nào được thiết kế để hoạt động trên đường bộ và được kéo bởi xe ô tô?",
+    "gold_aids": [
+      34
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 34,
+    "node_id": "1463002b-8243-4609-a18d-d4531d2cad39"
+  },
+  {
+    "question": "Tôi muốn mua một chiếc xe chở người bốn bánh có gắn động cơ, nó có thể chở được bao nhiêu người?",
+    "gold_aids": [
+      34
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 34,
+    "node_id": "d3fc28da-52b7-4b76-8d01-e58a809b84e9"
+  },
+  {
+    "question": "Tôi đang tìm kiếm một chiếc xe điện bốn bánh để chở gia đình, nó có phải là xe chở người bốn bánh có gắn động cơ không?",
+    "gold_aids": [
+      34
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 34,
+    "node_id": "d3fc28da-52b7-4b76-8d01-e58a809b84e9"
+  },
+  {
+    "question": "Tôi muốn mua một chiếc xe chở hàng nhỏ, nhưng tôi không biết nó có phù hợp với quy định pháp luật không?",
+    "gold_aids": [
+      34
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 34,
+    "node_id": "a4d5ee4c-cb6e-4a55-bf84-d22df80ddc39"
+  },
+  {
+    "question": "Xe ba bánh có động cơ được coi là xe mô tô khi nào?",
+    "gold_aids": [
+      34
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 34,
+    "node_id": "3bc38b2a-44e1-4084-9f39-35a842035519"
+  },
+  {
+    "question": "Theo Điều 34 Khoản 1 Điểm g, xe gắn máy được định nghĩa như thế nào?",
+    "gold_aids": [
+      34
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 34,
+    "node_id": "4480892a-e0ab-4365-98af-7a479d74de19"
+  },
+  {
+    "question": "Nếu tôi sở hữu một chiếc xe có tính năng tương tự các loại xe quy định, liệu nó có được coi là xe quy định không?",
+    "gold_aids": [
+      34
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 34,
+    "node_id": "a86ccb3d-25ae-4d65-994f-cd918d6559f4"
+  },
+  {
+    "question": "Điều 34 Khoản 2 quy định về loại xe nào?",
+    "gold_aids": [
+      34
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 34,
+    "node_id": "9dde2a7a-72f2-4961-af55-f01de5c9a091"
+  },
+  {
+    "question": "Theo Điều 34 Khoản 3 Điểm e, các loại xe đặc chủng sử dụng vào mục đích gì?",
+    "gold_aids": [
+      34
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 34,
+    "node_id": "5a87f3cf-d43b-4a40-8d80-049fbb70e42b"
+  },
+  {
+    "question": "Phương tiện giao thông nào không cần người lái trực tiếp?",
+    "gold_aids": [
+      34
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 34,
+    "node_id": "08221eb0-b726-4fe3-9db4-010e6ac9ab0a"
+  },
+  {
+    "question": "Làm thế nào để quản lý và sử dụng xe giống như xe cơ giới, xe thô sơ?",
+    "gold_aids": [
+      34
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 34,
+    "node_id": "3b562b30-b3d5-4005-9f6b-ce1a42379c15"
+  },
+  {
+    "question": "Ai quy định chi tiết về xây dựng?",
+    "gold_aids": [
+      34
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 34,
+    "node_id": "e9f321c7-f1f4-460f-9d17-e930d2b0979c"
+  },
+  {
+    "question": "Muốn tham gia giao thông đường bộ thì xe phải đáp ứng những điều kiện gì?",
+    "gold_aids": [
+      35
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 35,
+    "node_id": "fb9543b0-07c6-40ec-afa2-41b687e70837"
+  },
+  {
+    "question": "Điều 35 Khoản 1 quy định về điều kiện tham gia giao thông đường bộ của xe cơ giới, xe máy chuyên dùng như thế nào?",
+    "gold_aids": [
+      35
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 35,
+    "node_id": "fd363edd-dc08-4015-bbf9-7dc4a80aa0c8"
+  },
+  {
+    "question": "Xe ô tô cần đáp ứng những điều kiện gì để tham gia giao thông đường bộ?",
+    "gold_aids": [
+      35
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 35,
+    "node_id": "fd363edd-dc08-4015-bbf9-7dc4a80aa0c8"
+  },
+  {
+    "question": "Lái xe máy chuyên dùng trên đường cần đáp ứng những yêu cầu gì?",
+    "gold_aids": [
+      35
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 35,
+    "node_id": "fd363edd-dc08-4015-bbf9-7dc4a80aa0c8"
+  },
+  {
+    "question": "Theo Điều 35 Khoản 1 Điểm a, người dân được quyền gì liên quan đến đăng ký xe?",
+    "gold_aids": [
+      35
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 35,
+    "node_id": "88a9a8f9-23f2-42d2-a2e9-999e90659d67"
+  },
+  {
+    "question": "Khi mua xe mới, tôi cần làm gì để xe được công nhận hợp pháp?",
+    "gold_aids": [
+      35
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 35,
+    "node_id": "88a9a8f9-23f2-42d2-a2e9-999e90659d67"
+  },
+  {
+    "question": "Điều 35 Khoản 2 quy định về việc lắp thiết bị giám sát hành trình và ghi nhận hình ảnh cho xe ô tô kinh doanh vận tải?",
+    "gold_aids": [
+      35
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 35,
+    "node_id": "06df1754-2f76-4440-91ef-e3ae02559f22"
+  },
+  {
+    "question": "Tôi có cần lắp thiết bị giám sát hành trình cho xe ô tô kinh doanh vận tải hàng hóa không?",
+    "gold_aids": [
+      35
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 35,
+    "node_id": "06df1754-2f76-4440-91ef-e3ae02559f22"
+  },
+  {
+    "question": "Tôi muốn sử dụng xe máy chuyên dùng, cần đáp ứng những yêu cầu gì?",
+    "gold_aids": [
+      35
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 35,
+    "node_id": "0e600b83-8c3f-4d97-bde3-e6f35a17305b"
+  },
+  {
+    "question": "Tôi muốn biết quy định về hoạt động của xe thô sơ, xe chở hàng bốn bánh có gắn động cơ, xe chở người bốn bánh có gắn động cơ tại địa phương. Cơ quan nào quy định điều này?",
+    "gold_aids": [
+      35
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 35,
+    "node_id": "ed39f3c0-11d2-4800-88bd-b60764e16a00"
+  },
+  {
+    "question": "Có những loại biển số xe nào?",
+    "gold_aids": [
+      36
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 36,
+    "node_id": "422748c2-e305-4cc2-ad78-57c5a401eec4"
+  },
+  {
+    "question": "Tôi muốn biết biển số xe của tôi sẽ như thế nào nếu tôi không thuộc các tổ chức đặc biệt?",
+    "gold_aids": [
+      36
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 36,
+    "node_id": "9c096f4d-4afb-4554-ad57-caff4002b9a8"
+  },
+  {
+    "question": "Những xe nào được cấp biển số xe có ký hiệu 'QT'?",
+    "gold_aids": [
+      36
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 36,
+    "node_id": "74e7210f-866b-4f12-af03-2f70219d528d"
+  },
+  {
+    "question": "Tôi là một cá nhân nước ngoài, tôi muốn biết biển số xe của tôi sẽ có ký hiệu gì?",
+    "gold_aids": [
+      36
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 36,
+    "node_id": "f2e2d353-cece-443e-a2fd-c2587e9fcf7b"
+  },
+  {
+    "question": "Tôi đang làm việc cho một công ty nước ngoài tại Việt Nam, tôi muốn biết biển số xe của công ty tôi sẽ có màu sắc và ký hiệu như thế nào?",
+    "gold_aids": [
+      36
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 36,
+    "node_id": "f2e2d353-cece-443e-a2fd-c2587e9fcf7b"
+  },
+  {
+    "question": "Biển số xe loại khác được quy định bởi ai?",
+    "gold_aids": [
+      36
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 36,
+    "node_id": "d1bc8815-17b6-4f31-9b07-76205e1a3838"
+  },
+  {
+    "question": "Làm thế nào để giữ lại biển số xe khi thay đổi địa chỉ?",
+    "gold_aids": [
+      36
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 36,
+    "node_id": "0093bf25-1eb3-4b2e-b4f2-1e95bd14e540"
+  },
+  {
+    "question": "Điều 37 Khoản 3 quy định gì về tiền đặt trước khi đấu giá biển số xe?",
+    "gold_aids": [
+      37
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 37,
+    "node_id": "ba398705-81fd-4016-9904-ed3aa3a7b208"
+  },
+  {
+    "question": "Khi tham gia đấu giá biển số xe, tôi cần đặt trước bao nhiêu tiền?",
+    "gold_aids": [
+      37
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 37,
+    "node_id": "ba398705-81fd-4016-9904-ed3aa3a7b208"
+  },
+  {
+    "question": "Người trúng đấu giá biển số xe có quyền gì theo quy định tại Điều 38 Khoản 1?",
+    "gold_aids": [
+      38
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 38,
+    "node_id": "b7342502-2e42-48e4-9891-6eb72bdaa18f"
+  },
+  {
+    "question": "Theo Điều 38 Khoản 1 Điểm đ, nếu người trúng đấu giá biển số xe chết thì kết quả trúng đấu giá sẽ bị hủy khi nào?",
+    "gold_aids": [
+      38
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 38,
+    "node_id": "a1f9d465-e045-4498-82d5-c7c335c23cc5"
+  },
+  {
+    "question": "Người trúng đấu giá biển số xe chết thì người thừa kế có thể nhận lại số tiền đã nộp không?",
+    "gold_aids": [
+      38
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 38,
+    "node_id": "a1f9d465-e045-4498-82d5-c7c335c23cc5"
+  },
+  {
+    "question": "Điều 38 Khoản 3 quy định về việc quy định chi tiết Điều này như thế nào?",
+    "gold_aids": [
+      38
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 38,
+    "node_id": "144d65b7-75f2-49cf-9e2e-548b1de0fadf"
+  },
+  {
+    "question": "Tôi muốn đăng ký xe mới, cần đáp ứng những điều kiện gì?",
+    "gold_aids": [
+      39
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 39,
+    "node_id": "9ebf356d-59fc-4512-9f08-1181f8db3665"
+  },
+  {
+    "question": "Tôi cần chứng nhận gì khi muốn bán xe?",
+    "gold_aids": [
+      39
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 39,
+    "node_id": "63c8184b-8868-4a2a-be52-b1998a2e4003"
+  },
+  {
+    "question": "Tôi muốn biết về quy định chứng nhận quyền sở hữu hợp pháp trong luật pháp Việt Nam?",
+    "gold_aids": [
+      39
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 39,
+    "node_id": "fb3705eb-21d0-4db2-8df7-8f5f1516223e"
+  },
+  {
+    "question": "Điều 39 Khoản 2 Điểm b quy định về điều kiện gì?",
+    "gold_aids": [
+      39
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 39,
+    "node_id": "2e9b6a6f-80ec-4fc0-9879-c49d29dfb302"
+  },
+  {
+    "question": "Cơ quan nào có thẩm quyền thay đổi mẫu giấy tờ liên quan đến đăng ký xe?",
+    "gold_aids": [
+      39
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 39,
+    "node_id": "3e97469b-1631-454e-b425-0abcb577313a"
+  },
+  {
+    "question": "Tôi cần làm gì khi chứng nhận đăng ký xe của tôi bị thất lạc?",
+    "gold_aids": [
+      39
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 39,
+    "node_id": "3c557ee8-cf25-4fbc-aa93-d2fc615243e1"
+  },
+  {
+    "question": "Khi nào thì chứng nhận đăng ký xe sẽ bị thu hồi?",
+    "gold_aids": [
+      39
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 39,
+    "node_id": "1c2f1acc-8130-4b09-8b7f-0b19a7f5574b"
+  },
+  {
+    "question": "Điều 39 Khoản 6 Điểm c quy định về trường hợp xe đã đăng ký nhưng phát hiện hồ sơ xe bị làm giả hoặc có kết luận của cơ quan có thẩm quyền về việc thay đổi trái phép số khung, số máy?",
+    "gold_aids": [
+      39
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 39,
+    "node_id": "71c1b8da-9e73-4547-b284-3a4ca487662c"
+  },
+  {
+    "question": "Trường hợp xe đã đăng ký nhưng số khung hoặc số máy bị thay đổi trái phép, cơ quan có thẩm quyền sẽ xử lý như thế nào?",
+    "gold_aids": [
+      39
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 39,
+    "node_id": "71c1b8da-9e73-4547-b284-3a4ca487662c"
+  },
+  {
+    "question": "Tôi có thể sử dụng xe ô tô đã hết hạn sử dụng không?",
+    "gold_aids": [
+      39
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 39,
+    "node_id": "b95407cf-e3b6-4da4-83f6-90233ef51311"
+  },
+  {
+    "question": "Khi nào thì chủ xe được phép yêu cầu thu hồi giấy tờ xe?",
+    "gold_aids": [
+      39
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 39,
+    "node_id": "91d96f26-b0cc-4e95-a9f3-45391820ca79"
+  },
+  {
+    "question": "Khi nào thì việc cấp đăng ký, cấp biển số xe được coi là không hợp lệ?",
+    "gold_aids": [
+      39
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 39,
+    "node_id": "ddf4d509-3407-4242-b92a-48b0ed7e39e1"
+  },
+  {
+    "question": "Xe của công an phục vụ mục đích gì?",
+    "gold_aids": [
+      40
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 40,
+    "node_id": "302e6181-6b68-45b5-87ad-2cde1abdd71f"
+  },
+  {
+    "question": "Mục đích sử dụng của xe cơ giới thuộc quân đội?",
+    "gold_aids": [
+      40
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 40,
+    "node_id": "302e6181-6b68-45b5-87ad-2cde1abdd71f"
+  },
+  {
+    "question": "Theo Điều 41 Khoản 2 Điểm c, cơ quan nào có nhiệm vụ kiểm tra, đánh giá, giám sát việc bảo đảm chất lượng an toàn kỹ thuật và bảo vệ môi trường?",
+    "gold_aids": [
+      41
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 41,
+    "node_id": "231fbfd1-dbe2-4b61-9428-70a7bae0d319"
+  },
+  {
+    "question": "Chứng nhận chất lượng an toàn kỹ thuật và bảo vệ môi trường của nước ngoài đối với xe cơ giới, phụ tùng xe cơ giới có được công nhận ở Việt Nam không?",
+    "gold_aids": [
+      41
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 41,
+    "node_id": "f99303b4-457c-49fc-a7b1-1c28ef01a1b8"
+  },
+  {
+    "question": "Ai quy định lộ trình áp dụng mức tiêu chuẩn khí thải cho xe cơ giới?",
+    "gold_aids": [
+      41
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 41,
+    "node_id": "eb60d34d-53b2-45c7-b702-ccc01b20f13b"
+  },
+  {
+    "question": "Tôi muốn mua xe máy cũ, có cần kiểm định không?",
+    "gold_aids": [
+      42
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 42,
+    "node_id": "354af151-4d4b-460c-aa4f-73b113a81040"
+  },
+  {
+    "question": "Tôi có xe máy chuyên dùng đã được chứng nhận về an toàn kỹ thuật, tôi có phải kiểm định khi di chuyển từ nơi sản xuất đến cửa hàng không?",
+    "gold_aids": [
+      42
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 42,
+    "node_id": "e9ca053f-5d5f-4f8c-8abb-99f07fbdf0d5"
+  },
+  {
+    "question": "Bộ trưởng Bộ Xây dựng quy định nội dung gì tại Điều 42 Khoản 5?",
+    "gold_aids": [
+      42
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 42,
+    "node_id": "c07591f2-2a8b-4a11-abcd-a8452d920c8a"
+  },
+  {
+    "question": "Làm thế nào để cơ sở đăng kiểm xe cơ giới được cấp giấy chứng nhận đủ điều kiện hoạt động?",
+    "gold_aids": [
+      42
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 42,
+    "node_id": "1bbfaf8d-c987-44c6-83e7-426961bb2494"
+  },
+  {
+    "question": "Trình tự, thủ tục kiểm định khí thải xe mô tô, xe gắn máy được quy định tại Điều 42 Khoản 5 Điểm đ như thế nào?",
+    "gold_aids": [
+      42
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 42,
+    "node_id": "2cb9ed69-2328-4281-ad35-1cf05e6494d3"
+  },
+  {
+    "question": "Tôi muốn biết về quy chuẩn kỹ thuật quốc gia liên quan đến đăng kiểm xe cơ giới và kiểm định khí thải xe mô tô, xe gắn máy?",
+    "gold_aids": [
+      42
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 42,
+    "node_id": "39ff0ed9-1178-4fcb-b406-f742d0e273b6"
+  },
+  {
+    "question": "Tôi cần làm gì để đảm bảo xe của tôi tuân thủ các quy định về an toàn kỹ thuật và bảo vệ môi trường?",
+    "gold_aids": [
+      43
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 43,
+    "node_id": "db379685-93e4-42ab-a7c5-2b2134727871"
+  },
+  {
+    "question": "Khi nào thì xe buýt được phép dừng xe?",
+    "gold_aids": [
+      44
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 44,
+    "node_id": "9ef728bb-9083-4afc-93c8-aa39492e3041"
+  },
+  {
+    "question": "Khi đón, trả hành khách, người lái xe taxi cần phải tuân thủ những quy định gì?",
+    "gold_aids": [
+      44
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 44,
+    "node_id": "24b4b11e-2415-438e-862b-39944414e375"
+  },
+  {
+    "question": "Theo Điều 44 Khoản 4, xe vệ sinh môi trường và xe ô tô chở vật liệu xây dựng, phế thải rời phải làm gì?",
+    "gold_aids": [
+      44
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 44,
+    "node_id": "153a2a84-9d6a-4cf3-acd3-b5d3d3242a7c"
+  },
+  {
+    "question": "Lái xe ô tô chở khách cần tuân thủ những quy định gì?",
+    "gold_aids": [
+      45
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 45,
+    "node_id": "d21aa012-47a6-4205-8783-dbfbe142120f"
+  },
+  {
+    "question": "Theo quy định tại Điều 45 Khoản 1 Điểm b, yêu cầu đối với vận chuyển hành khách là gì?",
+    "gold_aids": [
+      45
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 45,
+    "node_id": "5c5c9df9-0fb4-41a6-9306-ce211f0ba834"
+  },
+  {
+    "question": "Làm thế nào để đảm bảo an toàn khi chở hành lý hoặc hàng hóa trên xe?",
+    "gold_aids": [
+      45
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 45,
+    "node_id": "3d5e46b0-4115-4352-bfea-63dce2d5ac31"
+  },
+  {
+    "question": "Theo Điều 45 Khoản 1 Điểm e, quy định về việc chở hàng hóa trong khoang chở hành khách là gì?",
+    "gold_aids": [
+      45
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 45,
+    "node_id": "86f21fa3-cd1a-40c8-8413-2dd99f0496a0"
+  },
+  {
+    "question": "Khi đi xe buýt, tôi có trách nhiệm gì?",
+    "gold_aids": [
+      45
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 45,
+    "node_id": "4d0bd512-02b3-458d-a70a-5f2dd59dfcea"
+  },
+  {
+    "question": "Để đảm bảo an toàn cho hành khách, lái xe cần thực hiện những biện pháp nào trước khi xe di chuyển?",
+    "gold_aids": [
+      45
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 45,
+    "node_id": "912595ac-cb96-465d-9cc4-f43d8412a5ed"
+  },
+  {
+    "question": "Theo quy định tại Điều 45 Khoản 2 Điểm c, người trên xe phải thực hiện những yêu cầu gì?",
+    "gold_aids": [
+      45
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 45,
+    "node_id": "8a5f7505-3a4a-4bb1-805b-eff771c31baa"
+  },
+  {
+    "question": "Điều 46 quy định về bảo đảm trật tự, an toàn giao thông đường bộ đối với xe ô tô chở trẻ em mầm non, học sinh như thế nào?",
+    "gold_aids": [
+      46
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 46,
+    "node_id": "2528d5ec-cd0b-40a8-b6c3-8eed4d988912"
+  },
+  {
+    "question": "Tôi cần làm gì để đảm bảo an toàn khi chở trẻ em mầm non đi học bằng ô tô?",
+    "gold_aids": [
+      46
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 46,
+    "node_id": "2528d5ec-cd0b-40a8-b6c3-8eed4d988912"
+  },
+  {
+    "question": "Tôi muốn chở học sinh bằng xe ô tô, có yêu cầu gì đặc biệt không?",
+    "gold_aids": [
+      46
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 46,
+    "node_id": "4abf4203-56fb-4526-b610-d58c3d77442f"
+  },
+  {
+    "question": "Xe ô tô chở học sinh tiểu học cần có bao nhiêu người quản lý nếu xe có 29 chỗ trở lên?",
+    "gold_aids": [
+      46
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 46,
+    "node_id": "cc2e9a00-f868-472b-b7c4-4d437832a6b2"
+  },
+  {
+    "question": "Lái xe đưa đón trẻ em mầm non cần có bao nhiêu năm kinh nghiệm lái xe?",
+    "gold_aids": [
+      46
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 46,
+    "node_id": "520ba045-4a97-483c-ac60-2365a942b47d"
+  },
+  {
+    "question": "Tôi đang chuẩn bị vận chuyển hàng hóa bằng xe ô tô, có yêu cầu gì về giấy tờ không?",
+    "gold_aids": [
+      47
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 47,
+    "node_id": "ddba7b63-a02d-48a7-9b69-2688884b26ee"
+  },
+  {
+    "question": "Tôi muốn chở hàng hóa trên xe ô tô, cần chú ý những gì để không vi phạm quy định?",
+    "gold_aids": [
+      47
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 47,
+    "node_id": "a4a539f7-eb69-40ee-ac0d-f1afab431ad9"
+  },
+  {
+    "question": "Theo Điều 47 Khoản 1 Điểm d, hàng hóa vận chuyển trên xe phải được sắp xếp như thế nào?",
+    "gold_aids": [
+      47
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 47,
+    "node_id": "d643b26b-3dae-4fcd-ab74-aa6d991cf693"
+  },
+  {
+    "question": "Vì sao không nên để hàng hóa che khuất đèn hoặc biển số xe khi vận chuyển?",
+    "gold_aids": [
+      47
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 47,
+    "node_id": "d643b26b-3dae-4fcd-ab74-aa6d991cf693"
+  },
+  {
+    "question": "Điều 47 Khoản 2 quy định về việc sử dụng xe mô tô, xe gắn máy, xe thô sơ để kinh doanh vận chuyển hành khách, hàng hóa như thế nào?",
+    "gold_aids": [
+      47
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 47,
+    "node_id": "85c7651b-f1f8-4a54-9748-5821d1047010"
+  },
+  {
+    "question": "Điều 48 quy định về việc bảo đảm trật tự, an toàn giao thông đường bộ đối với loại xe nào?",
+    "gold_aids": [
+      48
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 48,
+    "node_id": "ddd06769-0711-48d5-945c-0a997d8c5740"
+  },
+  {
+    "question": "Khi kinh doanh vận tải, tôi cần niêm yết những thông tin gì?",
+    "gold_aids": [
+      48
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 48,
+    "node_id": "e61f82b8-0494-4a7a-bc41-663d7083f0cf"
+  },
+  {
+    "question": "Theo quy định tại Điều 49 Khoản 1 Điểm d, hàng hóa vận chuyển trên xe phải được sắp xếp như thế nào?",
+    "gold_aids": [
+      49
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 49,
+    "node_id": "26e7f412-5471-479c-87f2-6e7482592755"
+  },
+  {
+    "question": "Theo quy định tại Điều 50 Khoản 1 Điểm b, phương tiện vận chuyển phải đáp ứng yêu cầu gì?",
+    "gold_aids": [
+      50
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 50,
+    "node_id": "5edc11d5-6af1-4ab6-b68f-294af637fdd1"
+  },
+  {
+    "question": "Khi vận chuyển động vật, phương tiện cần đáp ứng yêu cầu gì để đảm bảo an toàn?",
+    "gold_aids": [
+      50
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 50,
+    "node_id": "5edc11d5-6af1-4ab6-b68f-294af637fdd1"
+  },
+  {
+    "question": "Tôi đang chuẩn bị vận chuyển một lô hàng hóa, làm thế nào để đảm bảo rằng tôi không vi phạm pháp luật về môi trường?",
+    "gold_aids": [
+      50
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 50,
+    "node_id": "4979581c-033b-42d3-8e0c-aa00a60f26a0"
+  },
+  {
+    "question": "Điều 51 quy định về bảo đảm trật tự, an toàn giao thông đường bộ đối với phương tiện gì?",
+    "gold_aids": [
+      51
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 51,
+    "node_id": "6ff59fe2-a2dd-4b04-8fcf-bbd1a15f158f"
+  },
+  {
+    "question": "Tôi cần giấy tờ gì khi vận chuyển hàng hoá nguy hiểm?",
+    "gold_aids": [
+      51
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 51,
+    "node_id": "ffeef2ff-638c-4087-bb0d-8ea2c72a32a8"
+  },
+  {
+    "question": "Làm thế nào để đảm bảo an toàn khi vận chuyển hàng hoá nguy hiểm?",
+    "gold_aids": [
+      51
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 51,
+    "node_id": "ffeef2ff-638c-4087-bb0d-8ea2c72a32a8"
+  },
+  {
+    "question": "Vận chuyển hàng hóa nguy hiểm có yêu cầu gì đặc biệt đối với người lái xe hoặc người áp tải?",
+    "gold_aids": [
+      51
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 51,
+    "node_id": "f434964e-9fb0-489c-8b0b-495e149813be"
+  },
+  {
+    "question": "Chính phủ quy định chi tiết Điều 51 Khoản 6 như thế nào?",
+    "gold_aids": [
+      51
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 51,
+    "node_id": "2966f848-17b8-4381-8efb-601d4c7ad7b2"
+  },
+  {
+    "question": "Khi nào thì xe cơ giới được coi là có kích thước không phù hợp?",
+    "gold_aids": [
+      52
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 52,
+    "node_id": "9f00b06d-fbc2-4ab8-b19e-02b33f27f610"
+  },
+  {
+    "question": "Khi vận chuyển hàng hóa, tôi cần chú ý đến kích thước của xe và hàng hóa như thế nào để đảm bảo an toàn?",
+    "gold_aids": [
+      52
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 52,
+    "node_id": "efcaaebe-8b0e-474b-8bc9-27bb6ac23479"
+  },
+  {
+    "question": "Điều 52 Khoản 3 Điểm a quy định về lưu hành xe quá khổ giới hạn như thế nào?",
+    "gold_aids": [
+      52
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 52,
+    "node_id": "98d6c9f1-f20e-4014-a646-e729c6f3e303"
+  },
+  {
+    "question": "Theo Điều 52 Khoản 3 Điểm b, trường hợp nào được phép lưu hành xe quá khổ giới hạn, xe quá tải trọng để chở hàng hóa trên đường bộ?",
+    "gold_aids": [
+      52
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 52,
+    "node_id": "3f3a8f50-7ccb-4dfa-b70a-650a5b9d12c9"
+  },
+  {
+    "question": "Khi nào tôi được phép chở hàng hóa quá khổ giới hạn trên đường bộ?",
+    "gold_aids": [
+      52
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 52,
+    "node_id": "3f3a8f50-7ccb-4dfa-b70a-650a5b9d12c9"
+  },
+  {
+    "question": "Tôi muốn di chuyển xe quá khổ trên đường bộ, cần phải làm gì?",
+    "gold_aids": [
+      52
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 52,
+    "node_id": "e26e2d7f-c27a-4680-b9ab-72912705b582"
+  },
+  {
+    "question": "Làm thế nào để đảm bảo an toàn khi lưu hành xe bánh xích trên đường bộ?",
+    "gold_aids": [
+      52
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 52,
+    "node_id": "e26e2d7f-c27a-4680-b9ab-72912705b582"
+  },
+  {
+    "question": "Điều 53 quy định về việc bảo đảm trật tự, an toàn giao thông đường bộ đối với xe vận chuyển hàng siêu trường, siêu trọng như thế nào?",
+    "gold_aids": [
+      53
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 53,
+    "node_id": "032c75c6-9fe9-4718-b66c-cf6c748155f0"
+  },
+  {
+    "question": "Khi vận chuyển hàng siêu trường, siêu trọng trên đường bộ thì cần phải đảm bảo những yêu cầu gì về an toàn giao thông?",
+    "gold_aids": [
+      53
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 53,
+    "node_id": "032c75c6-9fe9-4718-b66c-cf6c748155f0"
+  },
+  {
+    "question": "Theo Điều 53 Khoản 1, hàng siêu trường, siêu trọng là gì?",
+    "gold_aids": [
+      53
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 53,
+    "node_id": "6e28c959-ca92-4ec2-8dcb-831858af0cea"
+  },
+  {
+    "question": "Hàng hóa nào được coi là siêu trường, siêu trọng khi vận chuyển trên đường bộ?",
+    "gold_aids": [
+      53
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 53,
+    "node_id": "6e28c959-ca92-4ec2-8dcb-831858af0cea"
+  },
+  {
+    "question": "Vận chuyển hàng hóa có kích thước lớn trên đường bộ cần chú ý điều gì?",
+    "gold_aids": [
+      53
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 53,
+    "node_id": "6e28c959-ca92-4ec2-8dcb-831858af0cea"
+  },
+  {
+    "question": "Điều kiện vận chuyển hàng siêu trường, siêu trọng?",
+    "gold_aids": [
+      53
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 53,
+    "node_id": "3970a839-9307-4e98-ad5a-28db642bf697"
+  },
+  {
+    "question": "Ai quy định về việc cấp giấy phép lưu hành xe vận chuyển hàng siêu trường, siêu trọng?",
+    "gold_aids": [
+      53
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 53,
+    "node_id": "ad8934e8-4557-4ac7-9a49-2fd6bf979d43"
+  },
+  {
+    "question": "Xe cứu hộ cần phải tuân thủ những quy định gì để đảm bảo an toàn giao thông trên đường bộ?",
+    "gold_aids": [
+      54
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 54,
+    "node_id": "2a1d1d3f-e587-4a64-99df-829282ce9395"
+  },
+  {
+    "question": "Làm thế nào để phân biệt xe cứu hộ giao thông đường bộ với các loại xe khác?",
+    "gold_aids": [
+      54
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 54,
+    "node_id": "c09ebe31-9b54-4fc6-90e3-b71a4eb41561"
+  },
+  {
+    "question": "Người nước ngoài có thể lái xe ô tô có tay lái bên phải ở Việt Nam không?",
+    "gold_aids": [
+      55
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 55,
+    "node_id": "4b0df15b-17d4-4916-afb8-337258cc21b7"
+  },
+  {
+    "question": "Tôi muốn tham gia giao thông bằng xe máy, nhưng tôi không biết quy định về phạm vi và thời gian?",
+    "gold_aids": [
+      55
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 55,
+    "node_id": "7ee4fb35-0626-4e75-aed3-0a412e96dbec"
+  },
+  {
+    "question": "Theo Điều 56 Khoản 1, người lái xe phải mang theo những giấy tờ gì khi tham gia giao thông đường bộ?",
+    "gold_aids": [
+      56
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 56,
+    "node_id": "90d9718d-9b7d-45d2-b63b-2e0bfcdede62"
+  },
+  {
+    "question": "Người điều khiển xe máy chuyên dùng tham gia giao thông đường bộ cần đáp ứng những yêu cầu gì về tuổi, sức khỏe và giấy tờ?",
+    "gold_aids": [
+      56
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 56,
+    "node_id": "99472c18-0570-44a5-9cd4-b67388f99a55"
+  },
+  {
+    "question": "Theo quy định tại Điều 56 Khoản 2 Điểm b, giấy tờ cần thiết để điều khiển xe máy chuyên dùng là gì?",
+    "gold_aids": [
+      56
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 56,
+    "node_id": "0ea6190d-7afc-4104-b757-b271a0c868d9"
+  },
+  {
+    "question": "Tôi muốn biết thông tin về giấy phép lái xe, quy định pháp luật có nói gì về vấn đề này?",
+    "gold_aids": [
+      57
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 57,
+    "node_id": "9aa2d1e7-5841-4d8a-8b66-e228d53619f8"
+  },
+  {
+    "question": "Giấy phép lái xe bao gồm những hạng nào theo quy định tại Điều 57 Khoản 1?",
+    "gold_aids": [
+      57
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 57,
+    "node_id": "d5b7f8e8-7131-4bd2-b2a7-845f03c8c997"
+  },
+  {
+    "question": "Tôi muốn lái xe mô tô ba bánh thì cần giấy phép lái xe hạng nào?",
+    "gold_aids": [
+      57
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 57,
+    "node_id": "1b32148b-df5a-41b1-ba7f-bab5ea262503"
+  },
+  {
+    "question": "Điều 57 Khoản 1 Điểm e quy định về giấy phép lái xe hạng C như thế nào?",
+    "gold_aids": [
+      57
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 57,
+    "node_id": "4e49dc6d-ce5f-47ad-a107-72e384105e64"
+  },
+  {
+    "question": "Tôi muốn lái xe tải trên 7.500 kg, loại giấy phép lái xe nào tôi cần?",
+    "gold_aids": [
+      57
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 57,
+    "node_id": "4e49dc6d-ce5f-47ad-a107-72e384105e64"
+  },
+  {
+    "question": "Điều 57 Khoản 1 Điểm h quy định về giấy phép lái xe hạng D2 cho loại xe nào?",
+    "gold_aids": [
+      57
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 57,
+    "node_id": "d3925075-9804-498a-b2b0-d0964d1837f8"
+  },
+  {
+    "question": "Điều 57 Khoản 1 Điểm l quy định về hạng giấy phép lái xe nào?",
+    "gold_aids": [
+      57
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 57,
+    "node_id": "5d156ee5-bc6e-4281-9f4a-936eeecb4618"
+  },
+  {
+    "question": "Nếu tôi muốn lái xe ô tô có khối lượng toàn bộ trên 750 kg, tôi cần giấy phép lái xe nào?",
+    "gold_aids": [
+      57
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 57,
+    "node_id": "29e1c2ed-8daf-4624-917a-db9bca3b55b4"
+  },
+  {
+    "question": "Tôi muốn lái xe ô tô kéo rơ moóc, loại xe nào thì được cấp giấy phép lái xe hạng D1E?",
+    "gold_aids": [
+      57
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 57,
+    "node_id": "999d5cdb-8415-459a-94d8-ad36275f9519"
+  },
+  {
+    "question": "Điều 57 Khoản 1 Điểm o quy định về giấy phép lái xe hạng D2E cấp cho người lái những loại xe nào?",
+    "gold_aids": [
+      57
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 57,
+    "node_id": "042e8ebc-3279-4d33-a97e-268be6d531bb"
+  },
+  {
+    "question": "Điều 57 Khoản 4 quy định về giấy phép lái xe cho người điều khiển xe ô tô như thế nào?",
+    "gold_aids": [
+      57
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 57,
+    "node_id": "48b58341-3897-475f-9de0-a165f8484359"
+  },
+  {
+    "question": "Tôi có xe ô tô cải tạo với số chỗ ít hơn xe cùng loại, cần giấy phép lái xe hạng gì?",
+    "gold_aids": [
+      57
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 57,
+    "node_id": "48b58341-3897-475f-9de0-a165f8484359"
+  },
+  {
+    "question": "Tôi muốn biết giấy phép lái xe của tôi được cấp bởi ai?",
+    "gold_aids": [
+      57
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 57,
+    "node_id": "81c4d650-2467-4ad9-a104-b9ed0a4cf264"
+  },
+  {
+    "question": "Giấy phép lái xe của nước ngoài được công nhận tại Việt Nam khi nào?",
+    "gold_aids": [
+      57
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 57,
+    "node_id": "0caead50-a2e1-4d0f-9668-03cc07afecbb"
+  },
+  {
+    "question": "Giấy phép lái xe quốc tế do ai cấp và có giá trị bao lâu?",
+    "gold_aids": [
+      57
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 57,
+    "node_id": "03b71a4a-ce03-4e0d-a7e5-c0bf1656dcd7"
+  },
+  {
+    "question": "Tôi có thể sử dụng giấy phép lái xe quốc tế trong bao lâu?",
+    "gold_aids": [
+      57
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 57,
+    "node_id": "03b71a4a-ce03-4e0d-a7e5-c0bf1656dcd7"
+  },
+  {
+    "question": "Tôi đang sống tại Việt Nam và muốn đi du lịch nước ngoài bằng ô tô, tôi cần giấy tờ gì?",
+    "gold_aids": [
+      57
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 57,
+    "node_id": "9181341d-d9a0-4dc7-ab6e-4ba6d966557c"
+  },
+  {
+    "question": "Giấy phép lái xe có hệ thống điểm để quản lý không?",
+    "gold_aids": [
+      58
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 58,
+    "node_id": "9bd3accd-3fd6-4e57-b3cc-a2224ec7d7a2"
+  },
+  {
+    "question": "Điều 59 quy định về gì?",
+    "gold_aids": [
+      59
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 59,
+    "node_id": "6b9ffadb-641f-4bc2-9a49-8dd1795b5dbf"
+  },
+  {
+    "question": "Tuổi tối thiểu để được cấp giấy phép lái xe hạng D1, D2, C1E, CE là bao nhiêu?",
+    "gold_aids": [
+      59
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 59,
+    "node_id": "e6973bea-e375-48cb-a603-e1cc5da8618a"
+  },
+  {
+    "question": "Theo quy định tại Điều 59 Khoản 1 Điểm đ, người đủ bao nhiêu tuổi trở lên được cấp giấy phép lái xe hạng D, D1E, D2E, DE?",
+    "gold_aids": [
+      59
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 59,
+    "node_id": "723165c1-a847-464a-aed0-5da52c002267"
+  },
+  {
+    "question": "Tôi muốn học lái xe hạng D, tôi cần phải đủ bao nhiêu tuổi?",
+    "gold_aids": [
+      59
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 59,
+    "node_id": "723165c1-a847-464a-aed0-5da52c002267"
+  },
+  {
+    "question": "Tôi là nữ, tôi có thể lái xe buýt đến tuổi bao nhiêu?",
+    "gold_aids": [
+      59
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 59,
+    "node_id": "34681b37-0398-4fe1-842c-4b2a9b60b760"
+  },
+  {
+    "question": "Điều 60 quy định về đào tạo lái xe như thế nào?",
+    "gold_aids": [
+      60
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 60,
+    "node_id": "5efd01b7-f498-427d-a2ba-b3ed5b6c4e2d"
+  },
+  {
+    "question": "Giấy phép lái xe hạng C có thể nâng hạng lên hạng nào để lái xe tải lớn hơn?",
+    "gold_aids": [
+      60
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 60,
+    "node_id": "c8f23a31-9ea6-407c-bfda-7fc87538c915"
+  },
+  {
+    "question": "Ai quy định thời gian lái xe an toàn cho từng hạng giấy phép lái xe?",
+    "gold_aids": [
+      60
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 60,
+    "node_id": "9b56ff4f-3d53-4d7e-9443-fa0fa13918c8"
+  },
+  {
+    "question": "Tôi muốn biết thông tin về sát hạch lái xe, quy định nào điều chỉnh?",
+    "gold_aids": [
+      61
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 61,
+    "node_id": "fd55c895-5c27-4eb8-9cd4-5814ce03ad23"
+  },
+  {
+    "question": "Tôi muốn học lái xe ô tô, tôi có thể học và sát hạch ở đâu?",
+    "gold_aids": [
+      61
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 61,
+    "node_id": "36348582-23a6-49c8-9a9b-6eee59f302d1"
+  },
+  {
+    "question": "Ai quy định điều kiện để sát hạch lái xe mô tô?",
+    "gold_aids": [
+      61
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 61,
+    "node_id": "50c865fe-14a5-479b-a237-b7e39b3671bd"
+  },
+  {
+    "question": "Bộ trưởng Bộ Công an quy định những gì về sát hạch để cấp giấy phép lái xe?",
+    "gold_aids": [
+      61
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 61,
+    "node_id": "13176f8e-47f6-4c4d-8d40-32742b2bbff9"
+  },
+  {
+    "question": "Trung tâm sát hạch lái xe cơ giới đường bộ phải đáp ứng những tiêu chuẩn gì?",
+    "gold_aids": [
+      61
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 61,
+    "node_id": "13176f8e-47f6-4c4d-8d40-32742b2bbff9"
+  },
+  {
+    "question": "Giấy phép lái xe được cấp cho ai?",
+    "gold_aids": [
+      62
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 62,
+    "node_id": "435c74b4-fbb7-4415-b141-73cd87f13619"
+  },
+  {
+    "question": "Khi nào thì được cấp giấy phép lái xe?",
+    "gold_aids": [
+      62
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 62,
+    "node_id": "435c74b4-fbb7-4415-b141-73cd87f13619"
+  },
+  {
+    "question": "Trường hợp giấy phép lái xe bị mất, tôi có phải thực hiện thủ tục gì không?",
+    "gold_aids": [
+      62
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 62,
+    "node_id": "8734bccf-185e-4c78-b17d-659e9442c424"
+  },
+  {
+    "question": "Giấy phép lái xe cũ có thể được đổi sang loại mới không?",
+    "gold_aids": [
+      62
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 62,
+    "node_id": "e9ad38d9-30d0-41b4-9da4-f55d662c1d03"
+  },
+  {
+    "question": "Tôi bị giữ giấy phép lái xe vì vi phạm giao thông, nhưng tôi không đến nhận lại giấy phép. Liệu giấy phép của tôi sẽ được xử lý như thế nào?",
+    "gold_aids": [
+      62
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 62,
+    "node_id": "1e4dc59f-ec13-4ca0-afff-bc43322a187b"
+  },
+  {
+    "question": "Trách nhiệm của Bộ trưởng Bộ Xây dựng trong việc quản lý chứng chỉ bồi dưỡng kiến thức pháp luật về giao thông đường bộ là gì?",
+    "gold_aids": [
+      63
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 63,
+    "node_id": "0dfb394f-f4f8-43bb-ab8b-e20562782a1a"
+  },
+  {
+    "question": "Lực lượng tuần tra, kiểm soát có nhiệm vụ gì?",
+    "gold_aids": [
+      65
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 65,
+    "node_id": "b350d91f-59c4-4f99-9e31-cd48a3b01750"
+  },
+  {
+    "question": "Theo Điều 65 Khoản 1 Điểm c, nhiệm vụ của lực lượng công an là gì?",
+    "gold_aids": [
+      65
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 65,
+    "node_id": "76ed0b0b-ec3b-4f2b-ba43-d43e618d2d25"
+  },
+  {
+    "question": "Tôi bị xử phạt vì vi phạm giao thông, ai là người có thẩm quyền xử lý?",
+    "gold_aids": [
+      65
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 65,
+    "node_id": "76ed0b0b-ec3b-4f2b-ba43-d43e618d2d25"
+  },
+  {
+    "question": "Theo quy định tại Điều 65 Khoản 2 Điểm a, tổ chức lực lượng trực tiếp tuần tra, kiểm soát trên tuyến giao thông đường bộ gồm những ai?",
+    "gold_aids": [
+      65
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 65,
+    "node_id": "cc74e3d8-19f2-4451-9cf6-be6a2e59df52"
+  },
+  {
+    "question": "Theo Điều 65 Khoản 2 Điểm b, kiểm soát thông qua hệ thống, phương tiện, thiết bị, dữ liệu quy định tại các khoản nào của Luật này?",
+    "gold_aids": [
+      65
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 65,
+    "node_id": "2fa56af5-f053-4a8c-a39b-f63bb6f497d4"
+  },
+  {
+    "question": "Theo Điều 65 Khoản 3 Điểm a, lực lượng Cảnh sát giao thông có nhiệm vụ gì?",
+    "gold_aids": [
+      65
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 65,
+    "node_id": "81cfede3-fced-400f-a24c-1c0cc78ce8db"
+  },
+  {
+    "question": "Điều 65 Khoản 4 quy định nhiệm vụ của Cảnh sát giao thông khi thực hiện tuần tra, kiểm soát là gì?",
+    "gold_aids": [
+      65
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 65,
+    "node_id": "65696fb9-901d-46c1-8732-d0533619837c"
+  },
+  {
+    "question": "Điều 65 Khoản 4 Điểm c quy định về nhiệm vụ gì?",
+    "gold_aids": [
+      65
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 65,
+    "node_id": "cf467608-5867-4c11-bb2a-c6c10f62dfbf"
+  },
+  {
+    "question": "Theo Điều 65 Khoản 4 Điểm d, người tham gia giao thông đường bộ có trách nhiệm gì?",
+    "gold_aids": [
+      65
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 65,
+    "node_id": "0bd8e01c-fdf4-496a-b02d-af9e2dddbe14"
+  },
+  {
+    "question": "Theo Điều 65 Khoản 4 Điểm đ, ai có nhiệm vụ chỉ huy, điều khiển giao thông đường bộ?",
+    "gold_aids": [
+      65
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 65,
+    "node_id": "2cd85a10-f881-4c6b-8c0e-24a625c97030"
+  },
+  {
+    "question": "Pháp luật quy định như thế nào về việc xử lý tai nạn giao thông đường bộ?",
+    "gold_aids": [
+      65
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 65,
+    "node_id": "1e7edc94-0e83-4df3-98b4-5a8ad98f17a9"
+  },
+  {
+    "question": "Điều 65 Khoản 4 Điểm g quy định về nhiệm vụ của lực lượng công an trong lĩnh vực gì?",
+    "gold_aids": [
+      65
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 65,
+    "node_id": "ca05f9d6-1e03-4a14-847c-5896b222ef30"
+  },
+  {
+    "question": "Lực lượng công an có nhiệm vụ gì trong việc bảo vệ an ninh trật tự trên đường bộ?",
+    "gold_aids": [
+      65
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 65,
+    "node_id": "ca05f9d6-1e03-4a14-847c-5896b222ef30"
+  },
+  {
+    "question": "Điều 65 Khoản 4 Điểm i quy định về việc phối hợp với cơ quan quản lý đường bộ như thế nào?",
+    "gold_aids": [
+      65
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 65,
+    "node_id": "2b22d51d-fb57-468a-bbda-18d89dae0425"
+  },
+  {
+    "question": "Quyền hạn của Cảnh sát giao thông khi thực hiện tuần tra, kiểm soát được quy định tại Điều 65 Khoản 5 như thế nào?",
+    "gold_aids": [
+      65
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 65,
+    "node_id": "c08f15aa-60c4-421e-a244-0d329c213e47"
+  },
+  {
+    "question": "Mục đích của việc dừng phương tiện tham gia giao thông đường bộ là gì?",
+    "gold_aids": [
+      65
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 65,
+    "node_id": "ae11f0e6-451f-4804-8568-4effa970d112"
+  },
+  {
+    "question": "Điều 65 Khoản 5 Điểm d quy định về việc vận hành, sử dụng hệ thống, phương tiện, thiết bị, dữ liệu như thế nào?",
+    "gold_aids": [
+      65
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 65,
+    "node_id": "029a34b5-a268-4de0-85cb-9c4262acddbd"
+  },
+  {
+    "question": "Khi sử dụng hệ thống, thiết bị, dữ liệu thì cần tuân thủ quy định gì?",
+    "gold_aids": [
+      65
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 65,
+    "node_id": "029a34b5-a268-4de0-85cb-9c4262acddbd"
+  },
+  {
+    "question": "Tôi muốn sử dụng vũ khí, công cụ hỗ trợ thì cần biết những quy định gì?",
+    "gold_aids": [
+      65
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 65,
+    "node_id": "029a34b5-a268-4de0-85cb-9c4262acddbd"
+  },
+  {
+    "question": "Tôi phải chịu trách nhiệm như thế nào về hành động của mình?",
+    "gold_aids": [
+      65
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 65,
+    "node_id": "1411eaed-0ab5-4eac-82fc-75b7d6d686da"
+  },
+  {
+    "question": "Ai quy định quy trình tuần tra, kiểm soát, xử lý vi phạm pháp luật về trật tự, an toàn giao thông đường bộ của Cảnh sát giao thông?",
+    "gold_aids": [
+      65
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 65,
+    "node_id": "1e87678b-b1e1-4ee4-aeef-789fc7fec0bb"
+  },
+  {
+    "question": "Cảnh sát giao thông được dừng phương tiện tham gia giao thông đường bộ để kiểm tra, kiểm soát khi nào?",
+    "gold_aids": [
+      66
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 66,
+    "node_id": "51c26d7d-5dad-464d-8397-37bc054bb64e"
+  },
+  {
+    "question": "Tại sao cảnh sát giao thông lại dừng xe của tôi?",
+    "gold_aids": [
+      66
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 66,
+    "node_id": "51c26d7d-5dad-464d-8397-37bc054bb64e"
+  },
+  {
+    "question": "Tôi thấy người khác lái xe không đúng quy định, tôi có thể báo cho cơ quan chức năng không?",
+    "gold_aids": [
+      66
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 66,
+    "node_id": "53d2444d-a7c6-43a9-9195-196114cb1f31"
+  },
+  {
+    "question": "Khi nào cảnh sát giao thông được phép dừng xe để kiểm tra?",
+    "gold_aids": [
+      66
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 66,
+    "node_id": "27520aa5-e281-4b48-b421-743b44b3b954"
+  },
+  {
+    "question": "Theo Điều 66 Khoản 3, việc sử dụng thông tin, tài liệu về bảo vệ an ninh quốc gia, trật tự, an toàn xã hội và đấu tranh phòng, chống tội phạm được quy định như thế nào?",
+    "gold_aids": [
+      66
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 66,
+    "node_id": "0dbe0068-de88-4910-ab06-319761f7ac65"
+  },
+  {
+    "question": "Theo Điều 66 Khoản 4, cơ quan chức năng sẽ xử lý như thế nào khi nhận được tin báo, tố giác, phản ánh, kiến nghị, đề nghị về tội phạm, hành vi vi phạm pháp luật khác?",
+    "gold_aids": [
+      66
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 66,
+    "node_id": "8a0aa7c4-27dd-4979-89ce-8eccae61e615"
+  },
+  {
+    "question": "Có biện pháp nào để ngăn chặn vi phạm về trật tự, an toàn giao thông đường bộ?",
+    "gold_aids": [
+      67
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 67,
+    "node_id": "ccc4b047-c898-4a25-9717-e802cff6d5bf"
+  },
+  {
+    "question": "Tôi muốn biết về việc sử dụng thiết bị thông minh trong chỉ huy, điều khiển giao thông đường bộ?",
+    "gold_aids": [
+      67
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 67,
+    "node_id": "9d17ef81-af7a-46fa-bafa-2669186e4612"
+  },
+  {
+    "question": "Nếu tôi muốn phản ánh một vấn đề liên quan đến pháp luật, tôi cần làm gì?",
+    "gold_aids": [
+      67
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 67,
+    "node_id": "2053b2e8-00ba-49de-91f0-6d20e91112ea"
+  },
+  {
+    "question": "Khi nào biện pháp khác được áp dụng ngoài các quy định pháp luật?",
+    "gold_aids": [
+      67
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 67,
+    "node_id": "981f058d-40a8-465c-ba0f-87fb2c96c57c"
+  },
+  {
+    "question": "Điều 68 quy định về việc huy động người, phương tiện, thiết bị dân sự trong trường hợp nào?",
+    "gold_aids": [
+      68
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 68,
+    "node_id": "75d49e0b-82f1-4fc6-b08d-2f315a514b28"
+  },
+  {
+    "question": "Khi có tình huống cấp bách, nhà nước có thể huy động người dân và tài sản của họ như thế nào?",
+    "gold_aids": [
+      68
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 68,
+    "node_id": "75d49e0b-82f1-4fc6-b08d-2f315a514b28"
+  },
+  {
+    "question": "Khi Cảnh sát giao thông huy động người dân trong trường hợp khẩn cấp, ai sẽ chịu trách nhiệm về thiệt hại xảy ra?",
+    "gold_aids": [
+      68
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 68,
+    "node_id": "ee31800d-c82e-408c-b4f9-4099fec88fd9"
+  },
+  {
+    "question": "Cảnh sát giao thông có thể yêu cầu ai di chuyển xe của tôi nếu tôi dừng, đỗ sai quy định và không có mặt tại hiện trường?",
+    "gold_aids": [
+      69
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 69,
+    "node_id": "bf304e66-8534-4b4a-b7ce-a53caa3dd8ff"
+  },
+  {
+    "question": "Khi cảnh sát giao thông di chuyển phương tiện, ai có trách nhiệm bảo đảm an toàn cho phương tiện?",
+    "gold_aids": [
+      69
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 69,
+    "node_id": "e382c811-382d-48d1-afa1-b028cca06961"
+  },
+  {
+    "question": "Các lực lượng công an có thể sử dụng thiết bị lưu trữ dữ liệu của tổ chức, cá nhân để làm gì?",
+    "gold_aids": [
+      70
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 70,
+    "node_id": "3d2e71b9-b82e-4f8e-b5a9-6797180f8e55"
+  },
+  {
+    "question": "Làm thế nào để đảm bảo an ninh, trật tự và an toàn giao thông trên đường bộ?",
+    "gold_aids": [
+      71
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 71,
+    "node_id": "4a1c3b61-6dd4-4229-aea2-f8862f798a07"
+  },
+  {
+    "question": "Quy chuẩn kỹ thuật quốc gia về hệ thống giám sát bảo đảm an ninh, trật tự, an toàn giao thông đường bộ được ban hành bởi cơ quan nào?",
+    "gold_aids": [
+      71
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 71,
+    "node_id": "77581a44-2d7d-4d70-ab00-d5bd22b0a4dc"
+  },
+  {
+    "question": "Điều 72 Khoản 1 quy định quyền của người điều khiển phương tiện tham gia giao thông đường bộ là gì?",
+    "gold_aids": [
+      72
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 72,
+    "node_id": "c9627cf9-adbb-4351-a983-c2222e325f10"
+  },
+  {
+    "question": "Khi bị cảnh sát giao thông dừng xe, tôi có quyền yêu cầu thông tin gì?",
+    "gold_aids": [
+      72
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 72,
+    "node_id": "2be8688e-4835-4e04-a712-bb6ad7adb5da"
+  },
+  {
+    "question": "Khi bị kiểm tra phương tiện, tôi có thể yêu cầu thông tin về việc kiểm tra không?",
+    "gold_aids": [
+      72
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 72,
+    "node_id": "2be8688e-4835-4e04-a712-bb6ad7adb5da"
+  },
+  {
+    "question": "Theo Điều 72 Khoản 2 Điểm a, công dân có trách nhiệm gì về trật tự, an toàn giao thông đường bộ?",
+    "gold_aids": [
+      72
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 72,
+    "node_id": "6d164003-5d1c-4827-99b7-5681f732018b"
+  },
+  {
+    "question": "Tôi đang lái xe trên đường và thấy cảnh sát giao thông yêu cầu dừng xe, tôi có phải dừng lại không?",
+    "gold_aids": [
+      72
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 72,
+    "node_id": "d66e7b36-2ad8-4c42-b333-ff9d52a7dc37"
+  },
+  {
+    "question": "Lực lượng nào được hỗ trợ để đảm bảo an toàn giao thông đường bộ?",
+    "gold_aids": [
+      72
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 72,
+    "node_id": "6caa38c1-a8b8-4978-b45d-a6b844825412"
+  },
+  {
+    "question": "Điều 73 quy định về việc ngăn chặn hành vi nào?",
+    "gold_aids": [
+      73
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 73,
+    "node_id": "8035fc44-abda-47d3-bf55-912487000612"
+  },
+  {
+    "question": "Theo Điều 73 Khoản 2, người thi hành công vụ có quyền truy đuổi trong trường hợp nào?",
+    "gold_aids": [
+      73
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 73,
+    "node_id": "828603d3-1ba6-46ab-9246-265a013c4d51"
+  },
+  {
+    "question": "Tôi không dừng xe khi có hiệu lệnh dừng từ cảnh sát giao thông, tôi có thể bị truy đuổi không?",
+    "gold_aids": [
+      73
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 73,
+    "node_id": "828603d3-1ba6-46ab-9246-265a013c4d51"
+  },
+  {
+    "question": "Ai có quyền chỉ huy và điều khiển giao thông trên đường?",
+    "gold_aids": [
+      74
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 74,
+    "node_id": "242f6e73-22d0-45d6-9876-f7d81615a5c8"
+  },
+  {
+    "question": "Điều khiển giao thông đường bộ được quy định như thế nào?",
+    "gold_aids": [
+      74
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 74,
+    "node_id": "ed1cf780-b3f8-4658-9537-089fc79a412b"
+  },
+  {
+    "question": "Có những loại trung tâm chỉ huy giao thông nào ở Việt Nam?",
+    "gold_aids": [
+      75
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 75,
+    "node_id": "0c11b574-fa0f-486c-8183-2529f323d3a1"
+  },
+  {
+    "question": "Trung tâm chỉ huy giao thông có thể kết nối dữ liệu với những đơn vị nào?",
+    "gold_aids": [
+      75
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 75,
+    "node_id": "522b055d-c9b9-4d37-9f51-e0b793616229"
+  },
+  {
+    "question": "Tôi đang lái xe và thấy đèn tín hiệu giao thông đường bộ, tôi cần làm gì?",
+    "gold_aids": [
+      75
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 75,
+    "node_id": "c0dfd79f-a704-414c-a3b9-881555e1a7ba"
+  },
+  {
+    "question": "Theo Điều 75 Khoản 4 Điểm b, hệ thống giám sát nào đảm bảo an ninh, trật tự, an toàn giao thông đường bộ?",
+    "gold_aids": [
+      75
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 75,
+    "node_id": "ea771c03-b7ed-4c3a-bded-965ae21e81ab"
+  },
+  {
+    "question": "Khi tôi gặp tai nạn giao thông, cảnh sát sử dụng thiết bị gì để điều tra và giải quyết vụ việc?",
+    "gold_aids": [
+      75
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 75,
+    "node_id": "97d4aab2-bc28-4951-b253-b1938b953596"
+  },
+  {
+    "question": "Trung tâm chỉ huy giao thông được quản lý như thế nào?",
+    "gold_aids": [
+      75
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 75,
+    "node_id": "d108e567-e706-4598-af81-bca4f895e4b0"
+  },
+  {
+    "question": "Theo Điều 76 Khoản 2, khi phát hiện tình huống nào thì phải báo cho cơ quan Công an nơi gần nhất?",
+    "gold_aids": [
+      76
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 76,
+    "node_id": "f12242cd-349f-44b0-ab35-2548a2348448"
+  },
+  {
+    "question": "Ai sẽ chịu trách nhiệm khi có tình huống khẩn cấp trên đường bộ?",
+    "gold_aids": [
+      76
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 76,
+    "node_id": "1c5c9afe-765b-46fe-a4ff-1035e03c595d"
+  },
+  {
+    "question": "Theo Điều 76 Khoản 3 Điểm c, cơ quan có thẩm quyền cần làm gì để đảm bảo trật tự, an toàn giao thông đường bộ?",
+    "gold_aids": [
+      76
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 76,
+    "node_id": "cfa098df-5c60-44bb-8e53-d66721a67a48"
+  },
+  {
+    "question": "Khi sử dụng tạm thời lòng đường, vỉa hè thì cần phải đảm bảo những yêu cầu gì?",
+    "gold_aids": [
+      77
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 77,
+    "node_id": "f69f9287-39ca-47d3-8e95-3d9f84e4916a"
+  },
+  {
+    "question": "Làm thế nào để sử dụng lòng đường, vỉa hè mà không ảnh hưởng đến giao thông?",
+    "gold_aids": [
+      77
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 77,
+    "node_id": "f69f9287-39ca-47d3-8e95-3d9f84e4916a"
+  },
+  {
+    "question": "Điều 77 Khoản 3 Điểm a quy định về nhiệm vụ gì?",
+    "gold_aids": [
+      77
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 77,
+    "node_id": "6ff3bdb6-7182-4448-aff4-af4a8691fa2d"
+  },
+  {
+    "question": "Khi xảy ra ùn tắc giao thông, ai có trách nhiệm phối hợp giải quyết?",
+    "gold_aids": [
+      78
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 78,
+    "node_id": "033b6a5d-457b-41cf-a88b-75e856e4cabf"
+  },
+  {
+    "question": "Công trình đường bộ cần tuân thủ những quy định gì về trật tự, an toàn giao thông?",
+    "gold_aids": [
+      79
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 79,
+    "node_id": "3de0f46a-eb94-40c5-8bbf-22300962495f"
+  },
+  {
+    "question": "Điều 79 Khoản 1 Điểm b quy định về việc thực hiện biện pháp gì trong trường hợp cần thiết?",
+    "gold_aids": [
+      79
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 79,
+    "node_id": "4d1c46bf-48ab-4b33-9785-68499d2e6664"
+  },
+  {
+    "question": "Khi xảy ra tai nạn giao thông đường bộ, ai cần thực hiện trách nhiệm?",
+    "gold_aids": [
+      80
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 80,
+    "node_id": "fb9053f5-c4a9-4124-95b9-2af91aaa63b2"
+  },
+  {
+    "question": "Khi bị tai nạn giao thông, tôi cần làm gì để hợp tác với cơ quan chức năng?",
+    "gold_aids": [
+      80
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 80,
+    "node_id": "87682846-7b80-449d-a429-4d4691ea0ffc"
+  },
+  {
+    "question": "Theo Điều 80 Khoản 2 Điểm a, chúng ta có trách nhiệm gì?",
+    "gold_aids": [
+      80
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 80,
+    "node_id": "f8c1e528-a38a-4721-879b-5035884d1b15"
+  },
+  {
+    "question": "Khi gặp người bị tai nạn giao thông, tôi cần làm gì để giúp họ?",
+    "gold_aids": [
+      80
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 80,
+    "node_id": "49afd84c-8d6e-40fb-8d9e-12ac14d46e12"
+  },
+  {
+    "question": "Khi xảy ra tai nạn giao thông đường bộ, ai là người cần phải báo ngay cho cơ quan chức năng?",
+    "gold_aids": [
+      81
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 81,
+    "node_id": "28c6f1cf-2a5b-4258-81d8-f9b6b5301a96"
+  },
+  {
+    "question": "Khi nào thì cơ quan Công an phải tổ chức lực lượng đến hiện trường vụ tai nạn giao thông?",
+    "gold_aids": [
+      81
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 81,
+    "node_id": "2025f8ea-0b70-420f-a5b9-e5d8b96d3de4"
+  },
+  {
+    "question": "Khi xảy ra tai nạn giao thông đường bộ, ai có trách nhiệm cứu nạn, cứu hộ?",
+    "gold_aids": [
+      82
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 82,
+    "node_id": "ba559373-4eb8-4474-9979-07e578561800"
+  },
+  {
+    "question": "Theo Điều 82 Khoản 1, cơ quan nào chủ trì phối hợp với các cơ quan, tổ chức, cá nhân có liên quan tổ chức lực lượng và công cụ, phương tiện nhanh chóng có mặt tại hiện trường để cứu nạn, cứu hộ?",
+    "gold_aids": [
+      82
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 82,
+    "node_id": "1b449081-bdaf-4153-a077-33c956f52afc"
+  },
+  {
+    "question": "Trong trường hợp cần thiết, cơ quan Công an có trách nhiệm báo cáo cơ quan nào để huy động lực lượng, phương tiện giải quyết vụ tai nạn giao thông đường bộ?",
+    "gold_aids": [
+      82
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 82,
+    "node_id": "1b449081-bdaf-4153-a077-33c956f52afc"
+  },
+  {
+    "question": "Theo Điều 82 Khoản 3, doanh nghiệp bảo hiểm có trách nhiệm gì khi phương tiện bị tai nạn giao thông đường bộ?",
+    "gold_aids": [
+      82
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 82,
+    "node_id": "5af601bb-8e17-459f-b8fa-a5649bcdbdc4"
+  },
+  {
+    "question": "Khi xảy ra tai nạn giao thông đường bộ liên quan đến hàng hóa nguy hiểm, cần phải làm gì để đảm bảo an toàn?",
+    "gold_aids": [
+      82
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 82,
+    "node_id": "ff69aeb8-0e27-49a3-8aa8-a0ff97c46cc0"
+  },
+  {
+    "question": "Trách nhiệm của các tổ chức, cá nhân liên quan đến vụ tai nạn giao thông đường bộ theo Điều 83 Khoản 1 Điểm c?",
+    "gold_aids": [
+      83
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 83,
+    "node_id": "94a18848-791f-46e4-bc7b-111916106c2c"
+  },
+  {
+    "question": "Khi nào thì áp dụng pháp luật về quyền ưu đãi, miễn trừ ngoại giao trong vụ tai nạn giao thông đường bộ?",
+    "gold_aids": [
+      83
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 83,
+    "node_id": "301beccb-65da-4a73-9d8c-03613134e1e6"
+  },
+  {
+    "question": "Khi xảy ra tai nạn giao thông đường bộ, tôi phải làm gì?",
+    "gold_aids": [
+      83
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 83,
+    "node_id": "007871d3-ffd2-418c-8aa9-927d8042cf3f"
+  },
+  {
+    "question": "Theo Điều 83 Khoản 2 Điểm b, nhiệm vụ của cơ quan chức năng khi xảy ra tai nạn giao thông đường bộ là gì?",
+    "gold_aids": [
+      83
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 83,
+    "node_id": "ab4c94eb-c85c-4f1c-9d80-489d652dd745"
+  },
+  {
+    "question": "Khi bị cảnh sát giao thông kiểm tra, tôi có thể bị giữ lại những giấy tờ gì?",
+    "gold_aids": [
+      83
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 83,
+    "node_id": "867a5c2d-4881-4800-aa62-64043279c672"
+  },
+  {
+    "question": "Điều 83 Khoản 2 Điểm g quy định về việc gì?",
+    "gold_aids": [
+      83
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 83,
+    "node_id": "52305ac5-7009-4e08-9b51-12898ac8676e"
+  },
+  {
+    "question": "Khi xảy ra tai nạn giao thông, cần phải làm gì để đảm bảo an toàn?",
+    "gold_aids": [
+      83
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 83,
+    "node_id": "09ac5a4e-0261-40ad-aef6-018e57b28bf3"
+  },
+  {
+    "question": "Mục đích của việc kết luận vụ tai nạn giao thông đường bộ là gì?",
+    "gold_aids": [
+      83
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 83,
+    "node_id": "09ac5a4e-0261-40ad-aef6-018e57b28bf3"
+  },
+  {
+    "question": "Điều 84 quy định về vấn đề gì?",
+    "gold_aids": [
+      84
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 84,
+    "node_id": "7f1aec8b-72ca-4e3f-8a3a-77fb4c295cec"
+  },
+  {
+    "question": "Mục đích của việc thống kê tai nạn giao thông đường bộ là gì?",
+    "gold_aids": [
+      84
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 84,
+    "node_id": "f3626bbe-9089-4b01-8b63-5303b2a86291"
+  },
+  {
+    "question": "Mục đích của việc cung cấp thông tin, tài liệu, kết quả điều tra là gì?",
+    "gold_aids": [
+      84
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 84,
+    "node_id": "676464b9-5891-4b85-8faf-53183dead768"
+  },
+  {
+    "question": "Ai quy định chi tiết về các vấn đề liên quan đến Điều 84?",
+    "gold_aids": [
+      84
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 84,
+    "node_id": "55c4264d-a995-4ea2-809a-dafbd914b4f0"
+  },
+  {
+    "question": "Có cơ chế nào để hỗ trợ giảm thiểu thiệt hại khi xảy ra tai nạn giao thông đường bộ không?",
+    "gold_aids": [
+      85
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 85,
+    "node_id": "18eae805-6044-4e39-838e-1a9e8071b019"
+  },
+  {
+    "question": "Làm thế nào để tài trợ cho quỹ giảm thiểu thiệt hại tai nạn giao thông đường bộ?",
+    "gold_aids": [
+      85
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 85,
+    "node_id": "a90169e4-8c22-4181-b06f-1b880d6abfec"
+  },
+  {
+    "question": "Tổ chức, cá nhân tham gia tuyên truyền về an toàn giao thông có được hưởng hỗ trợ từ Nhà nước không?",
+    "gold_aids": [
+      85
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 85,
+    "node_id": "fb7bde33-f155-42bb-8f7c-40495daba891"
+  },
+  {
+    "question": "Mục đích chính của một tổ chức hoạt động không vì lợi nhuận là gì?",
+    "gold_aids": [
+      85
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 85,
+    "node_id": "390df250-2e7d-4db6-a50b-3e4fd2ec9411"
+  },
+  {
+    "question": "Điều 86 quy định về nội dung quản lý nhà nước về trật tự, an toàn giao thông đường bộ như thế nào?",
+    "gold_aids": [
+      86
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 86,
+    "node_id": "b5196a74-631a-4da1-8373-2dcf36c45425"
+  },
+  {
+    "question": "Làm thế nào để quản lý phương tiện giao thông đường bộ?",
+    "gold_aids": [
+      86
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 86,
+    "node_id": "1170af93-c14b-4ec9-9298-98e1e2d3ce5c"
+  },
+  {
+    "question": "Theo Điều 86 Khoản 5, quản lý người điều khiển phương tiện tham gia giao thông đường bộ được quy định như thế nào?",
+    "gold_aids": [
+      86
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 86,
+    "node_id": "ca6dfc8c-8ec7-4ab8-b6b6-b38db853f2d7"
+  },
+  {
+    "question": "Theo Điều 86 Khoản 7, ai có nhiệm vụ chỉ huy, điều khiển giao thông đường bộ?",
+    "gold_aids": [
+      86
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 86,
+    "node_id": "84cff639-287b-4b48-a092-3dbbc8992211"
+  },
+  {
+    "question": "Khi có tai nạn giao thông đường bộ, cơ quan chức năng nào sẽ vào cuộc để điều tra và giải quyết?",
+    "gold_aids": [
+      86
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 86,
+    "node_id": "1ed05dda-e939-4432-87ee-177721e00608"
+  },
+  {
+    "question": "Lực lượng nào có nhiệm vụ trực tiếp bảo đảm trật tự, an toàn giao thông đường bộ?",
+    "gold_aids": [
+      86
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 86,
+    "node_id": "c7935617-ff67-4012-b8b0-f74a3c6c66f8"
+  },
+  {
+    "question": "Làm thế nào để đảm bảo an toàn giao thông đường bộ trên phạm vi quốc tế?",
+    "gold_aids": [
+      86
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 86,
+    "node_id": "43d89cc2-c4b8-4bcc-b461-1d2628356551"
+  },
+  {
+    "question": "Trách nhiệm quản lý nhà nước về trật tự, an toàn giao thông đường bộ được quy định tại điều nào?",
+    "gold_aids": [
+      87
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 87,
+    "node_id": "fedd2b31-09b0-41fe-9cdf-93c230514731"
+  },
+  {
+    "question": "Ai có trách nhiệm quản lý trật tự, an toàn giao thông đường bộ?",
+    "gold_aids": [
+      87
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 87,
+    "node_id": "fedd2b31-09b0-41fe-9cdf-93c230514731"
+  },
+  {
+    "question": "Theo Điều 87 Khoản 2, cơ quan nào giúp Chính phủ thực hiện thống nhất quản lý nhà nước về trật tự, an toàn giao thông đường bộ?",
+    "gold_aids": [
+      87
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 87,
+    "node_id": "5567a017-0127-482a-b4ea-d711777f031f"
+  },
+  {
+    "question": "Điều 10 của Luật này quy định về gì?",
+    "gold_aids": [
+      10
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 10,
+    "node_id": "ad97f928-7c27-44cd-bae7-3686ffccb966"
+  },
+  {
+    "question": "Cơ quan nào chịu trách nhiệm quản lý phương tiện giao thông đường bộ trong phạm vi quốc phòng?",
+    "gold_aids": [
+      10
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 10,
+    "node_id": "777b4c92-c1ab-4b3e-8e23-c2be6fdee640"
+  },
+  {
+    "question": "Ai quản lý sức khỏe của người lái xe?",
+    "gold_aids": [
+      10
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 10,
+    "node_id": "b8436862-6524-492f-a8e4-c2d65ad922ab"
+  },
+  {
+    "question": "Cơ quan nào có nhiệm vụ đảm bảo an toàn giao thông đường bộ tại địa phương?",
+    "gold_aids": [
+      10
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 10,
+    "node_id": "3f8e9ab4-3526-44c8-b27a-d723e3776c92"
+  },
+  {
+    "question": "Luật này có hiệu lực thi hành khi nào?",
+    "gold_aids": [
+      88
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 88,
+    "node_id": "185d59e1-72de-4a3f-9ebf-c541c59246d7"
+  },
+  {
+    "question": "Luật Giao thông đường bộ cũ có còn hiệu lực không?",
+    "gold_aids": [
+      35
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 35,
+    "node_id": "2be33d5e-4550-467b-985f-44d5f508c7d0"
+  },
+  {
+    "question": "Giấy phép lái xe hạng A3 có thể điều khiển những loại xe nào?",
+    "gold_aids": [
+      89
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 89,
+    "node_id": "496d3562-8358-425e-bd0f-144e96445e4c"
+  },
+  {
+    "question": "Tôi có giấy phép lái xe B1 số tự động, tôi có thể lái xe ô tô tải có trọng tải bao nhiêu kg?",
+    "gold_aids": [
+      89
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 89,
+    "node_id": "d9b4938a-beb1-4df1-8a79-a88823393fb7"
+  },
+  {
+    "question": "Tôi có giấy phép lái xe hạng B2, tôi có thể lái xe tải trọng bao nhiêu kg?",
+    "gold_aids": [
+      89
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 89,
+    "node_id": "3a2bbaeb-e526-4de8-a929-52edefef03a3"
+  },
+  {
+    "question": "Người có giấy phép lái xe đã được cấp trước ngày Luật này có hiệu lực thi hành có nhu cầu đổi, cấp lại giấy phép lái xe thì thực hiện như thế nào?",
+    "gold_aids": [
+      89
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 89,
+    "node_id": "1fe13e0f-675c-4f51-8881-b97e218ac30f"
+  },
+  {
+    "question": "Điều kiện để đổi giấy phép lái xe hạng A1 sang giấy phép lái xe hạng A theo quy định tại Điều 89 Khoản 3 Điểm a?",
+    "gold_aids": [
+      89
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 89,
+    "node_id": "4d392d61-e60a-4da5-9409-62753dcaba2e"
+  },
+  {
+    "question": "Giấy phép lái xe hạng A2 có thể đổi, cấp lại sang giấy phép lái xe hạng gì?",
+    "gold_aids": [
+      89
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 89,
+    "node_id": "3fee94ad-9181-4e6c-a2bc-51330fc808f2"
+  },
+  {
+    "question": "Tôi muốn nâng cấp giấy phép lái xe của mình từ hạng A3, loại giấy phép lái xe nào tôi có thể nhận được?",
+    "gold_aids": [
+      89
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 89,
+    "node_id": "4fe8ff0f-84e8-4597-ba49-1574b8d6f8c8"
+  },
+  {
+    "question": "Tôi có giấy phép lái xe B1 số tự động, tôi có thể lái xe số sàn không?",
+    "gold_aids": [
+      89
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 89,
+    "node_id": "733d3883-cdd9-4c03-b13d-0ed1c0a82198"
+  },
+  {
+    "question": "Tôi muốn đổi giấy phép lái xe B1 số tự động sang hạng khác, điều kiện hạn chế là gì?",
+    "gold_aids": [
+      89
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 89,
+    "node_id": "733d3883-cdd9-4c03-b13d-0ed1c0a82198"
+  },
+  {
+    "question": "Giấy phép lái xe hạng B1, B2 được đổi, cấp lại sang giấy phép lái xe hạng gì?",
+    "gold_aids": [
+      89
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 89,
+    "node_id": "8927d480-4f3c-45a6-a32c-3211b84d2e88"
+  },
+  {
+    "question": "Người điều khiển máy kéo có trọng tải lớn cần giấy phép lái xe gì?",
+    "gold_aids": [
+      89
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 89,
+    "node_id": "a7db489e-6ac8-4d58-bba3-d28815199e39"
+  },
+  {
+    "question": "Giấy phép lái xe hạng FB2 có thể đổi, cấp lại sang giấy phép lái xe hạng nào?",
+    "gold_aids": [
+      89
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 89,
+    "node_id": "f8fde745-8ebf-4b7e-bb90-c9931451ceb5"
+  },
+  {
+    "question": "Tôi có giấy phép lái xe hạng FB2, tôi có thể đổi sang hạng gì?",
+    "gold_aids": [
+      89
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 89,
+    "node_id": "f8fde745-8ebf-4b7e-bb90-c9931451ceb5"
+  },
+  {
+    "question": "Tôi điều khiển máy kéo có trọng tải trên 3.500 kg, tôi cần giấy phép lái xe hạng nào?",
+    "gold_aids": [
+      89
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 89,
+    "node_id": "8f95f1ff-605d-4112-80ab-bba2cb17ea99"
+  },
+  {
+    "question": "Giấy tờ xe máy đã đăng ký trước khi Luật mới có hiệu lực có cần phải làm lại không?",
+    "gold_aids": [
+      89
+    ],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 89,
+    "node_id": "bfd2b636-da62-4338-86dd-fea7b274be4a"
+  },
+  {
+    "question": "Tôi đã đấu giá biển số xe ô tô trước khi Luật này có hiệu lực, tôi cần làm gì tiếp theo?",
+    "gold_aids": [89],
+    "type": "retrieval",
+    "law_name": "Luật Trật tự, an toàn giao thông đường bộ",
+    "article": 89,
+    "node_id": "b36bea80-49ec-42fd-ae31-ec76c4d81f6e"
   }
 ]
