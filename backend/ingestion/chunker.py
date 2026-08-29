@@ -120,27 +120,11 @@ def chunk_article(article: RawArticle) -> list:
     return chunks
 
 
-def _ascii_id_component(value: str) -> str:
-    """ASCII-hoá một thành phần ngắn (chữ cái điểm/khoản, vd. 'đ' -> 'd') để
-    dùng trong chunk_id/Pinecone vector id. KHÔNG dùng cho breadcrumb hiển
-    thị — chỉ cho chuỗi ID. Nguyên nhân gốc: RE_DIEM trong parser.py khớp cả
-    'đ' (điểm sau 'd' trong liệt kê a) b) ... d) đ) e)...), ký tự này không
-    phải ASCII khiến Pinecone từ chối upsert."""
-    if not value:
-        return value
-    folded = value.replace("đ", "d").replace("Đ", "D")
-    normalized = unicodedata.normalize("NFKD", folded)
-    return "".join(c for c in normalized if unicodedata.category(c) != "Mn")
-
-
 def chunk_articles(articles: list) -> list:
-    splits = split_article_into_khoan_diem(article.body)
-    for i, split in enumerate(splits):
-        if not split.text:
-            continue
-        suffix = f"_k{split.khoan_no or i}"
-        if split.diem_no:
-            suffix += f"_d{split.diem_no}"
+    all_chunks = []
+    for art in articles:
+        all_chunks.extend(chunk_article(art))
+    return all_chunks
 
 
 def build_parent_lookup(chunks: list) -> dict:
