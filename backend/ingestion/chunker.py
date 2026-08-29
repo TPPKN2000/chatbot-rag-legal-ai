@@ -62,6 +62,18 @@ def _ascii_id(value: str) -> str:
     ascii_value = re.sub(r"[^A-Za-z0-9_.-]+", "-", ascii_value)
     return ascii_value.strip("-") or "chunk"
 
+def _ascii_id_component(value: str) -> str:
+    """ASCII-hoá một thành phần ngắn (chữ cái điểm/khoản, vd. 'đ' -> 'd') để
+    dùng trong chunk_id/Pinecone vector id. KHÔNG dùng cho breadcrumb hiển
+    thị — chỉ cho chuỗi ID. Nguyên nhân gốc: RE_DIEM trong parser.py khớp cả
+    'đ' (điểm sau 'd' trong liệt kê a) b) ... d) đ) e)...), ký tự này không
+    phải ASCII khiến Pinecone từ chối upsert."""
+    if not value:
+        return value
+    folded = value.replace("đ", "d").replace("Đ", "D")
+    normalized = unicodedata.normalize("NFKD", folded)
+    return "".join(c for c in normalized if unicodedata.category(c) != "Mn")
+
 
 def _parse_real_article_num(article: RawArticle):
     m = _RE_DIEU_NUM.search(article.title or "")
@@ -103,9 +115,10 @@ def chunk_article(article: RawArticle) -> list:
     for i, split in enumerate(splits):
         if not split.text:
             continue
-        suffix = f"_k{split.khoan_no or i}"
+        khoan_component = _ascii_id_component(split.khoan_no) if split.khoan_no else str(i)
+        suffix = f"_k{khoan_component}"
         if split.diem_no:
-            suffix += f"_d{split.diem_no}"
+            suffix += f"_d{_ascii_id_component(split.diem_no)}"
         sub_parts = _soft_split_oversized(split.text)
         for j, part_text in enumerate(sub_parts):
             part_suffix = suffix if len(sub_parts) == 1 else f"{suffix}_p{j}"
